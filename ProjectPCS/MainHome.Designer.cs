@@ -30,7 +30,6 @@ namespace ProjectPCS
         private void InitializeComponent()
         {
             this.btn_mBarang = new System.Windows.Forms.Button();
-            this.btn_mPelanggan = new System.Windows.Forms.Button();
             this.btn_mModel = new System.Windows.Forms.Button();
             this.btn_mSupplier = new System.Windows.Forms.Button();
             this.btn_mMerk = new System.Windows.Forms.Button();
@@ -39,58 +38,52 @@ namespace ProjectPCS
             this.btn_mGroupuser = new System.Windows.Forms.Button();
             this.btn_mHakaksesgroupuser = new System.Windows.Forms.Button();
             this.btn_mUsers = new System.Windows.Forms.Button();
+            this.btn_mPelanggan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_mBarang
             // 
             this.btn_mBarang.Location = new System.Drawing.Point(139, 71);
-            this.btn_mBarang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_mBarang.Margin = new System.Windows.Forms.Padding(2);
             this.btn_mBarang.Name = "btn_mBarang";
             this.btn_mBarang.Size = new System.Drawing.Size(163, 21);
             this.btn_mBarang.TabIndex = 0;
             this.btn_mBarang.Text = "Master Barang";
             this.btn_mBarang.UseVisualStyleBackColor = true;
-            // 
-            // btn_mPelanggan
-            // 
-            this.btn_mPelanggan.Location = new System.Drawing.Point(139, 96);
-            this.btn_mPelanggan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_mPelanggan.Name = "btn_mPelanggan";
-            this.btn_mPelanggan.Size = new System.Drawing.Size(163, 21);
-            this.btn_mPelanggan.TabIndex = 1;
-            this.btn_mPelanggan.Text = "Master Pelanggan";
-            this.btn_mPelanggan.UseVisualStyleBackColor = true;
-            this.btn_mPelanggan.Click += new System.EventHandler(this.button2_Click);
+            this.btn_mBarang.Click += new System.EventHandler(this.btn_mBarang_Click);
             // 
             // btn_mModel
             // 
             this.btn_mModel.Location = new System.Drawing.Point(139, 121);
-            this.btn_mModel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_mModel.Margin = new System.Windows.Forms.Padding(2);
             this.btn_mModel.Name = "btn_mModel";
             this.btn_mModel.Size = new System.Drawing.Size(163, 21);
             this.btn_mModel.TabIndex = 2;
             this.btn_mModel.Text = "Master Model";
             this.btn_mModel.UseVisualStyleBackColor = true;
+            this.btn_mModel.Click += new System.EventHandler(this.btn_mModel_Click);
             // 
             // btn_mSupplier
             // 
             this.btn_mSupplier.Location = new System.Drawing.Point(139, 146);
-            this.btn_mSupplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_mSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.btn_mSupplier.Name = "btn_mSupplier";
             this.btn_mSupplier.Size = new System.Drawing.Size(163, 21);
             this.btn_mSupplier.TabIndex = 3;
             this.btn_mSupplier.Text = "Master Supplier";
             this.btn_mSupplier.UseVisualStyleBackColor = true;
+            this.btn_mSupplier.Click += new System.EventHandler(this.btn_mSupplier_Click);
             // 
             // btn_mMerk
             // 
             this.btn_mMerk.Location = new System.Drawing.Point(139, 171);
-            this.btn_mMerk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_mMerk.Margin = new System.Windows.Forms.Padding(2);
             this.btn_mMerk.Name = "btn_mMerk";
             this.btn_mMerk.Size = new System.Drawing.Size(163, 21);
             this.btn_mMerk.TabIndex = 4;
             this.btn_mMerk.Text = "Master Merk";
             this.btn_mMerk.UseVisualStyleBackColor = true;
+            this.btn_mMerk.Click += new System.EventHandler(this.btn_mMerk_Click);
             // 
             // label1
             // 
@@ -110,6 +103,7 @@ namespace ProjectPCS
             this.btn_mKota.TabIndex = 6;
             this.btn_mKota.Text = "Master Kota";
             this.btn_mKota.UseVisualStyleBackColor = true;
+            this.btn_mKota.Click += new System.EventHandler(this.btn_mKota_Click);
             // 
             // btn_mGroupuser
             // 
@@ -119,6 +113,7 @@ namespace ProjectPCS
             this.btn_mGroupuser.TabIndex = 7;
             this.btn_mGroupuser.Text = "Master Group User";
             this.btn_mGroupuser.UseVisualStyleBackColor = true;
+            this.btn_mGroupuser.Click += new System.EventHandler(this.btn_mGroupuser_Click);
             // 
             // btn_mHakaksesgroupuser
             // 
@@ -128,6 +123,7 @@ namespace ProjectPCS
             this.btn_mHakaksesgroupuser.TabIndex = 8;
             this.btn_mHakaksesgroupuser.Text = "Master Hak Akses Group User";
             this.btn_mHakaksesgroupuser.UseVisualStyleBackColor = true;
+            this.btn_mHakaksesgroupuser.Click += new System.EventHandler(this.btn_mHakaksesgroupuser_Click);
             // 
             // btn_mUsers
             // 
@@ -137,6 +133,18 @@ namespace ProjectPCS
             this.btn_mUsers.TabIndex = 9;
             this.btn_mUsers.Text = "Master Users";
             this.btn_mUsers.UseVisualStyleBackColor = true;
+            this.btn_mUsers.Click += new System.EventHandler(this.btn_mUsers_Click);
+            // 
+            // btn_mPelanggan
+            // 
+            this.btn_mPelanggan.Location = new System.Drawing.Point(139, 96);
+            this.btn_mPelanggan.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_mPelanggan.Name = "btn_mPelanggan";
+            this.btn_mPelanggan.Size = new System.Drawing.Size(163, 21);
+            this.btn_mPelanggan.TabIndex = 10;
+            this.btn_mPelanggan.Text = "Master Pelanggan";
+            this.btn_mPelanggan.UseVisualStyleBackColor = true;
+            this.btn_mPelanggan.Click += new System.EventHandler(this.btn_mPelanggan_Click);
             // 
             // mainHome
             // 
@@ -144,6 +152,7 @@ namespace ProjectPCS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(460, 323);
+            this.Controls.Add(this.btn_mPelanggan);
             this.Controls.Add(this.btn_mUsers);
             this.Controls.Add(this.btn_mHakaksesgroupuser);
             this.Controls.Add(this.btn_mGroupuser);
@@ -152,7 +161,6 @@ namespace ProjectPCS
             this.Controls.Add(this.btn_mMerk);
             this.Controls.Add(this.btn_mSupplier);
             this.Controls.Add(this.btn_mModel);
-            this.Controls.Add(this.btn_mPelanggan);
             this.Controls.Add(this.btn_mBarang);
             this.Name = "mainHome";
             this.Text = "MainHome";
@@ -165,7 +173,6 @@ namespace ProjectPCS
         #endregion
 
         private System.Windows.Forms.Button btn_mBarang;
-        private System.Windows.Forms.Button btn_mPelanggan;
         private System.Windows.Forms.Button btn_mModel;
         private System.Windows.Forms.Button btn_mSupplier;
         private System.Windows.Forms.Button btn_mMerk;
@@ -174,6 +181,7 @@ namespace ProjectPCS
         private System.Windows.Forms.Button btn_mGroupuser;
         private System.Windows.Forms.Button btn_mHakaksesgroupuser;
         private System.Windows.Forms.Button btn_mUsers;
+        private System.Windows.Forms.Button btn_mPelanggan;
     }
 }
 

@@ -100,6 +100,7 @@ namespace ProjectPCS
             this.btn_Exit.TabIndex = 47;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // btn_Delete
             // 
@@ -163,6 +164,7 @@ namespace ProjectPCS
             this.btn_Next.TabIndex = 40;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // btn_Prev
             // 
@@ -172,6 +174,7 @@ namespace ProjectPCS
             this.btn_Prev.TabIndex = 39;
             this.btn_Prev.Text = "Prev";
             this.btn_Prev.UseVisualStyleBackColor = true;
+            this.btn_Prev.Click += new System.EventHandler(this.btn_Prev_Click);
             // 
             // btn_Top
             // 
@@ -372,7 +375,7 @@ namespace ProjectPCS
             // 
             this.iDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_merkBindingSource, "ID", true));
             this.iDTextBox.Location = new System.Drawing.Point(398, 108);
-            this.iDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iDTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.iDTextBox.Name = "iDTextBox";
             this.iDTextBox.Size = new System.Drawing.Size(64, 20);
             this.iDTextBox.TabIndex = 49;
@@ -381,7 +384,7 @@ namespace ProjectPCS
             // 
             this.mERK_DESCTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_merkBindingSource, "MERK_DESC", true));
             this.mERK_DESCTextBox.Location = new System.Drawing.Point(398, 143);
-            this.mERK_DESCTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mERK_DESCTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.mERK_DESCTextBox.Name = "mERK_DESCTextBox";
             this.mERK_DESCTextBox.Size = new System.Drawing.Size(200, 20);
             this.mERK_DESCTextBox.TabIndex = 50;

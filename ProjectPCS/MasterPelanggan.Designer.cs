@@ -243,6 +243,7 @@ namespace ProjectPCS
             this.btn_Exit.TabIndex = 23;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // btn_Delete
             // 
@@ -306,6 +307,7 @@ namespace ProjectPCS
             this.btn_Next.TabIndex = 16;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // btn_Prev
             // 
@@ -315,6 +317,7 @@ namespace ProjectPCS
             this.btn_Prev.TabIndex = 15;
             this.btn_Prev.Text = "Prev";
             this.btn_Prev.UseVisualStyleBackColor = true;
+            this.btn_Prev.Click += new System.EventHandler(this.btn_Prev_Click);
             // 
             // btn_Top
             // 
@@ -515,7 +518,7 @@ namespace ProjectPCS
             // 
             this.p_CODETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "P_CODE", true));
             this.p_CODETextBox.Location = new System.Drawing.Point(131, 100);
-            this.p_CODETextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.p_CODETextBox.Margin = new System.Windows.Forms.Padding(2);
             this.p_CODETextBox.Name = "p_CODETextBox";
             this.p_CODETextBox.Size = new System.Drawing.Size(115, 20);
             this.p_CODETextBox.TabIndex = 25;
@@ -524,7 +527,7 @@ namespace ProjectPCS
             // 
             this.nAMATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "NAMA", true));
             this.nAMATextBox.Location = new System.Drawing.Point(131, 124);
-            this.nAMATextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nAMATextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nAMATextBox.Name = "nAMATextBox";
             this.nAMATextBox.Size = new System.Drawing.Size(228, 20);
             this.nAMATextBox.TabIndex = 26;
@@ -533,7 +536,7 @@ namespace ProjectPCS
             // 
             this.aLAMATTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "ALAMAT", true));
             this.aLAMATTextBox.Location = new System.Drawing.Point(131, 148);
-            this.aLAMATTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.aLAMATTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.aLAMATTextBox.Name = "aLAMATTextBox";
             this.aLAMATTextBox.Size = new System.Drawing.Size(325, 20);
             this.aLAMATTextBox.TabIndex = 27;
@@ -542,7 +545,7 @@ namespace ProjectPCS
             // 
             this.tELPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "TELP", true));
             this.tELPTextBox.Location = new System.Drawing.Point(572, 124);
-            this.tELPTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tELPTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.tELPTextBox.Name = "tELPTextBox";
             this.tELPTextBox.Size = new System.Drawing.Size(234, 20);
             this.tELPTextBox.TabIndex = 28;
@@ -551,7 +554,7 @@ namespace ProjectPCS
             // 
             this.kOTATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "KOTA", true));
             this.kOTATextBox.Location = new System.Drawing.Point(572, 148);
-            this.kOTATextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kOTATextBox.Margin = new System.Windows.Forms.Padding(2);
             this.kOTATextBox.Name = "kOTATextBox";
             this.kOTATextBox.Size = new System.Drawing.Size(234, 20);
             this.kOTATextBox.TabIndex = 29;
@@ -560,7 +563,7 @@ namespace ProjectPCS
             // 
             this.nAMA1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "NAMA1", true));
             this.nAMA1TextBox.Location = new System.Drawing.Point(131, 195);
-            this.nAMA1TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nAMA1TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nAMA1TextBox.Name = "nAMA1TextBox";
             this.nAMA1TextBox.Size = new System.Drawing.Size(228, 20);
             this.nAMA1TextBox.TabIndex = 30;
@@ -569,7 +572,7 @@ namespace ProjectPCS
             // 
             this.aLAMAT1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "ALAMAT1", true));
             this.aLAMAT1TextBox.Location = new System.Drawing.Point(131, 219);
-            this.aLAMAT1TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.aLAMAT1TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.aLAMAT1TextBox.Name = "aLAMAT1TextBox";
             this.aLAMAT1TextBox.Size = new System.Drawing.Size(325, 20);
             this.aLAMAT1TextBox.TabIndex = 31;
@@ -578,7 +581,7 @@ namespace ProjectPCS
             // 
             this.hPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "HP", true));
             this.hPTextBox.Location = new System.Drawing.Point(572, 191);
-            this.hPTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hPTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.hPTextBox.Name = "hPTextBox";
             this.hPTextBox.Size = new System.Drawing.Size(234, 20);
             this.hPTextBox.TabIndex = 32;
@@ -587,7 +590,7 @@ namespace ProjectPCS
             // 
             this.kOTA1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "KOTA1", true));
             this.kOTA1TextBox.Location = new System.Drawing.Point(572, 218);
-            this.kOTA1TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kOTA1TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.kOTA1TextBox.Name = "kOTA1TextBox";
             this.kOTA1TextBox.Size = new System.Drawing.Size(234, 20);
             this.kOTA1TextBox.TabIndex = 33;
@@ -596,7 +599,7 @@ namespace ProjectPCS
             // 
             this.nAMA_NPWPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "NAMA_NPWP", true));
             this.nAMA_NPWPTextBox.Location = new System.Drawing.Point(131, 261);
-            this.nAMA_NPWPTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nAMA_NPWPTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nAMA_NPWPTextBox.Name = "nAMA_NPWPTextBox";
             this.nAMA_NPWPTextBox.Size = new System.Drawing.Size(228, 20);
             this.nAMA_NPWPTextBox.TabIndex = 34;
@@ -605,7 +608,7 @@ namespace ProjectPCS
             // 
             this.aLAMAT_NPWPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "ALAMAT_NPWP", true));
             this.aLAMAT_NPWPTextBox.Location = new System.Drawing.Point(131, 285);
-            this.aLAMAT_NPWPTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.aLAMAT_NPWPTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.aLAMAT_NPWPTextBox.Name = "aLAMAT_NPWPTextBox";
             this.aLAMAT_NPWPTextBox.Size = new System.Drawing.Size(675, 20);
             this.aLAMAT_NPWPTextBox.TabIndex = 35;
@@ -615,7 +618,7 @@ namespace ProjectPCS
             // 
             this.nPWPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "NPWP", true));
             this.nPWPTextBox.Location = new System.Drawing.Point(443, 261);
-            this.nPWPTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nPWPTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nPWPTextBox.Name = "nPWPTextBox";
             this.nPWPTextBox.Size = new System.Drawing.Size(159, 20);
             this.nPWPTextBox.TabIndex = 36;
@@ -624,7 +627,7 @@ namespace ProjectPCS
             // 
             this.kETERANGANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_pelangganBindingSource, "KETERANGAN", true));
             this.kETERANGANTextBox.Location = new System.Drawing.Point(131, 327);
-            this.kETERANGANTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kETERANGANTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.kETERANGANTextBox.Name = "kETERANGANTextBox";
             this.kETERANGANTextBox.Size = new System.Drawing.Size(471, 20);
             this.kETERANGANTextBox.TabIndex = 38;

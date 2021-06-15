@@ -16,7 +16,7 @@ namespace ProjectPCS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new masterBarang());
+            Application.Run(new mainHome());
         }
     }
 }

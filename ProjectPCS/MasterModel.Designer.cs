@@ -100,6 +100,7 @@ namespace ProjectPCS
             this.btn_Exit.TabIndex = 35;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // btn_Delete
             // 
@@ -163,6 +164,7 @@ namespace ProjectPCS
             this.btn_Next.TabIndex = 28;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // btn_Prev
             // 
@@ -172,6 +174,7 @@ namespace ProjectPCS
             this.btn_Prev.TabIndex = 27;
             this.btn_Prev.Text = "Prev";
             this.btn_Prev.UseVisualStyleBackColor = true;
+            this.btn_Prev.Click += new System.EventHandler(this.btn_Prev_Click);
             // 
             // btn_Top
             // 
@@ -325,6 +328,7 @@ namespace ProjectPCS
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(35, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -371,7 +375,7 @@ namespace ProjectPCS
             // 
             this.mODEL_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_modelBindingSource, "MODEL_ID", true));
             this.mODEL_IDTextBox.Location = new System.Drawing.Point(393, 114);
-            this.mODEL_IDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mODEL_IDTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.mODEL_IDTextBox.Name = "mODEL_IDTextBox";
             this.mODEL_IDTextBox.Size = new System.Drawing.Size(94, 20);
             this.mODEL_IDTextBox.TabIndex = 37;
@@ -380,7 +384,7 @@ namespace ProjectPCS
             // 
             this.dESCRIPTIONTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_modelBindingSource, "DESCRIPTION", true));
             this.dESCRIPTIONTextBox.Location = new System.Drawing.Point(393, 138);
-            this.dESCRIPTIONTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dESCRIPTIONTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.dESCRIPTIONTextBox.Name = "dESCRIPTIONTextBox";
             this.dESCRIPTIONTextBox.Size = new System.Drawing.Size(223, 20);
             this.dESCRIPTIONTextBox.TabIndex = 38;

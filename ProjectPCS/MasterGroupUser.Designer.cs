@@ -49,6 +49,7 @@ namespace ProjectPCS
             this.btn_Exit.TabIndex = 33;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // btn_Delete
             // 
@@ -112,6 +113,7 @@ namespace ProjectPCS
             this.btn_Next.TabIndex = 26;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // btn_Prev
             // 
@@ -121,6 +123,7 @@ namespace ProjectPCS
             this.btn_Prev.TabIndex = 25;
             this.btn_Prev.Text = "Prev";
             this.btn_Prev.UseVisualStyleBackColor = true;
+            this.btn_Prev.Click += new System.EventHandler(this.btn_Prev_Click);
             // 
             // btn_Top
             // 

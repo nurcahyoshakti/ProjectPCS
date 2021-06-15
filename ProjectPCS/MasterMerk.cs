@@ -31,5 +31,24 @@ namespace ProjectPCS
             this.m_merkTableAdapter.Fill(this.uASDataSet.m_merk);
 
         }
+
+        private void btn_Prev_Click(object sender, EventArgs e)
+        {
+            m_merkBindingSource.MovePrevious();
+            this.Text = "Pos=" + m_merkBindingSource.Position;
+        }
+
+        private void btn_Next_Click(object sender, EventArgs e)
+        {
+            m_merkBindingSource.MoveNext();
+            this.Text = "Pos=" + m_merkBindingSource.Position;
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            mainHome f = new mainHome();
+            f.Show();
+        }
     }
 }

@@ -273,6 +273,7 @@ namespace ProjectPCS
             this.btn_Prev.TabIndex = 3;
             this.btn_Prev.Text = "Prev";
             this.btn_Prev.UseVisualStyleBackColor = true;
+            this.btn_Prev.Click += new System.EventHandler(this.btn_Prev_Click);
             // 
             // btn_Next
             // 
@@ -282,6 +283,7 @@ namespace ProjectPCS
             this.btn_Next.TabIndex = 4;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // btn_Bottom
             // 
@@ -345,6 +347,7 @@ namespace ProjectPCS
             this.btn_Exit.TabIndex = 11;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // uASDataSet
             // 
@@ -470,6 +473,7 @@ namespace ProjectPCS
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(35, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -516,7 +520,7 @@ namespace ProjectPCS
             // 
             this.kODETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "KODE", true));
             this.kODETextBox.Location = new System.Drawing.Point(106, 117);
-            this.kODETextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kODETextBox.Margin = new System.Windows.Forms.Padding(2);
             this.kODETextBox.Name = "kODETextBox";
             this.kODETextBox.Size = new System.Drawing.Size(129, 20);
             this.kODETextBox.TabIndex = 14;
@@ -525,7 +529,7 @@ namespace ProjectPCS
             // 
             this.pART_NOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "PART_NO", true));
             this.pART_NOTextBox.Location = new System.Drawing.Point(358, 117);
-            this.pART_NOTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pART_NOTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.pART_NOTextBox.Name = "pART_NOTextBox";
             this.pART_NOTextBox.Size = new System.Drawing.Size(129, 20);
             this.pART_NOTextBox.TabIndex = 16;
@@ -534,7 +538,7 @@ namespace ProjectPCS
             // 
             this.pN1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "PN1", true));
             this.pN1TextBox.Location = new System.Drawing.Point(578, 117);
-            this.pN1TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pN1TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.pN1TextBox.Name = "pN1TextBox";
             this.pN1TextBox.Size = new System.Drawing.Size(129, 20);
             this.pN1TextBox.TabIndex = 18;
@@ -543,7 +547,7 @@ namespace ProjectPCS
             // 
             this.uNIT_PRICETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "UNIT_PRICE", true));
             this.uNIT_PRICETextBox.Location = new System.Drawing.Point(827, 117);
-            this.uNIT_PRICETextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uNIT_PRICETextBox.Margin = new System.Windows.Forms.Padding(2);
             this.uNIT_PRICETextBox.Name = "uNIT_PRICETextBox";
             this.uNIT_PRICETextBox.Size = new System.Drawing.Size(129, 20);
             this.uNIT_PRICETextBox.TabIndex = 20;
@@ -552,7 +556,7 @@ namespace ProjectPCS
             // 
             this.uNITTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "UNIT", true));
             this.uNITTextBox.Location = new System.Drawing.Point(513, 159);
-            this.uNITTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uNITTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.uNITTextBox.Name = "uNITTextBox";
             this.uNITTextBox.Size = new System.Drawing.Size(348, 20);
             this.uNITTextBox.TabIndex = 22;
@@ -561,7 +565,7 @@ namespace ProjectPCS
             // 
             this.dESCRIPTIONTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "DESCRIPTION", true));
             this.dESCRIPTIONTextBox.Location = new System.Drawing.Point(106, 159);
-            this.dESCRIPTIONTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dESCRIPTIONTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.dESCRIPTIONTextBox.Name = "dESCRIPTIONTextBox";
             this.dESCRIPTIONTextBox.Size = new System.Drawing.Size(348, 20);
             this.dESCRIPTIONTextBox.TabIndex = 24;
@@ -570,7 +574,7 @@ namespace ProjectPCS
             // 
             this.sTAMPINGTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "STAMPING", true));
             this.sTAMPINGTextBox.Location = new System.Drawing.Point(106, 234);
-            this.sTAMPINGTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sTAMPINGTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.sTAMPINGTextBox.Name = "sTAMPINGTextBox";
             this.sTAMPINGTextBox.Size = new System.Drawing.Size(186, 20);
             this.sTAMPINGTextBox.TabIndex = 26;
@@ -579,7 +583,7 @@ namespace ProjectPCS
             // 
             this.dATA_FISIKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "DATA_FISIK", true));
             this.dATA_FISIKTextBox.Location = new System.Drawing.Point(388, 234);
-            this.dATA_FISIKTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dATA_FISIKTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.dATA_FISIKTextBox.Name = "dATA_FISIKTextBox";
             this.dATA_FISIKTextBox.Size = new System.Drawing.Size(186, 20);
             this.dATA_FISIKTextBox.TabIndex = 28;
@@ -588,7 +592,7 @@ namespace ProjectPCS
             // 
             this.pERSAMAANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "PERSAMAAN", true));
             this.pERSAMAANTextBox.Location = new System.Drawing.Point(686, 234);
-            this.pERSAMAANTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pERSAMAANTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.pERSAMAANTextBox.Name = "pERSAMAANTextBox";
             this.pERSAMAANTextBox.Size = new System.Drawing.Size(186, 20);
             this.pERSAMAANTextBox.TabIndex = 30;
@@ -597,7 +601,7 @@ namespace ProjectPCS
             // 
             this.mERK1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "MERK1", true));
             this.mERK1TextBox.Location = new System.Drawing.Point(106, 268);
-            this.mERK1TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mERK1TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.mERK1TextBox.Name = "mERK1TextBox";
             this.mERK1TextBox.Size = new System.Drawing.Size(186, 20);
             this.mERK1TextBox.TabIndex = 32;
@@ -606,7 +610,7 @@ namespace ProjectPCS
             // 
             this.mERK2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "MERK2", true));
             this.mERK2TextBox.Location = new System.Drawing.Point(388, 268);
-            this.mERK2TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mERK2TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.mERK2TextBox.Name = "mERK2TextBox";
             this.mERK2TextBox.Size = new System.Drawing.Size(186, 20);
             this.mERK2TextBox.TabIndex = 34;
@@ -615,7 +619,7 @@ namespace ProjectPCS
             // 
             this.mERK3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "MERK3", true));
             this.mERK3TextBox.Location = new System.Drawing.Point(686, 268);
-            this.mERK3TextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mERK3TextBox.Margin = new System.Windows.Forms.Padding(2);
             this.mERK3TextBox.Name = "mERK3TextBox";
             this.mERK3TextBox.Size = new System.Drawing.Size(186, 20);
             this.mERK3TextBox.TabIndex = 36;
@@ -624,7 +628,7 @@ namespace ProjectPCS
             // 
             this.kETERANGANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "KETERANGAN", true));
             this.kETERANGANTextBox.Location = new System.Drawing.Point(106, 343);
-            this.kETERANGANTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kETERANGANTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.kETERANGANTextBox.Name = "kETERANGANTextBox";
             this.kETERANGANTextBox.Size = new System.Drawing.Size(766, 20);
             this.kETERANGANTextBox.TabIndex = 38;
