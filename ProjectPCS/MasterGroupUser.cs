@@ -33,5 +33,10 @@ namespace ProjectPCS
             mainHome f = new mainHome();
             f.Show();
         }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

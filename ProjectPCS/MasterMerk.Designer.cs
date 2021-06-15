@@ -75,28 +75,27 @@ namespace ProjectPCS
             // iDLabel
             // 
             iDLabel.AutoSize = true;
-            iDLabel.Location = new System.Drawing.Point(346, 111);
-            iDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            iDLabel.Location = new System.Drawing.Point(519, 171);
             iDLabel.Name = "iDLabel";
-            iDLabel.Size = new System.Drawing.Size(48, 13);
+            iDLabel.Size = new System.Drawing.Size(69, 20);
             iDLabel.TabIndex = 48;
             iDLabel.Text = "Merk ID:";
             // 
             // mERK_DESCLabel
             // 
             mERK_DESCLabel.AutoSize = true;
-            mERK_DESCLabel.Location = new System.Drawing.Point(331, 146);
-            mERK_DESCLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            mERK_DESCLabel.Location = new System.Drawing.Point(496, 225);
             mERK_DESCLabel.Name = "mERK_DESCLabel";
-            mERK_DESCLabel.Size = new System.Drawing.Size(63, 13);
+            mERK_DESCLabel.Size = new System.Drawing.Size(93, 20);
             mERK_DESCLabel.TabIndex = 49;
             mERK_DESCLabel.Text = "Description:";
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Location = new System.Drawing.Point(780, 219);
+            this.btn_Exit.Location = new System.Drawing.Point(1170, 337);
+            this.btn_Exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Exit.Size = new System.Drawing.Size(112, 35);
             this.btn_Exit.TabIndex = 47;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
@@ -104,63 +103,71 @@ namespace ProjectPCS
             // 
             // btn_Delete
             // 
-            this.btn_Delete.Location = new System.Drawing.Point(699, 219);
+            this.btn_Delete.Location = new System.Drawing.Point(1048, 337);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_Delete.Size = new System.Drawing.Size(112, 35);
             this.btn_Delete.TabIndex = 46;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = true;
             // 
             // btn_Edit
             // 
-            this.btn_Edit.Location = new System.Drawing.Point(618, 219);
+            this.btn_Edit.Location = new System.Drawing.Point(927, 337);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Edit.Size = new System.Drawing.Size(112, 35);
             this.btn_Edit.TabIndex = 45;
             this.btn_Edit.Text = "Edit";
             this.btn_Edit.UseVisualStyleBackColor = true;
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(537, 219);
+            this.btn_Add.Location = new System.Drawing.Point(806, 337);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(75, 23);
+            this.btn_Add.Size = new System.Drawing.Size(112, 35);
             this.btn_Add.TabIndex = 44;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Print
             // 
-            this.btn_Print.Location = new System.Drawing.Point(456, 219);
+            this.btn_Print.Location = new System.Drawing.Point(684, 337);
+            this.btn_Print.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Print.Name = "btn_Print";
-            this.btn_Print.Size = new System.Drawing.Size(75, 23);
+            this.btn_Print.Size = new System.Drawing.Size(112, 35);
             this.btn_Print.TabIndex = 43;
             this.btn_Print.Text = "Print";
             this.btn_Print.UseVisualStyleBackColor = true;
             // 
             // btn_Find
             // 
-            this.btn_Find.Location = new System.Drawing.Point(375, 219);
+            this.btn_Find.Location = new System.Drawing.Point(562, 337);
+            this.btn_Find.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Find.Name = "btn_Find";
-            this.btn_Find.Size = new System.Drawing.Size(75, 23);
+            this.btn_Find.Size = new System.Drawing.Size(112, 35);
             this.btn_Find.TabIndex = 42;
             this.btn_Find.Text = "Find";
             this.btn_Find.UseVisualStyleBackColor = true;
             // 
             // btn_Bottom
             // 
-            this.btn_Bottom.Location = new System.Drawing.Point(294, 219);
+            this.btn_Bottom.Location = new System.Drawing.Point(441, 337);
+            this.btn_Bottom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Bottom.Name = "btn_Bottom";
-            this.btn_Bottom.Size = new System.Drawing.Size(75, 23);
+            this.btn_Bottom.Size = new System.Drawing.Size(112, 35);
             this.btn_Bottom.TabIndex = 41;
             this.btn_Bottom.Text = "Bottom";
             this.btn_Bottom.UseVisualStyleBackColor = true;
             // 
             // btn_Next
             // 
-            this.btn_Next.Location = new System.Drawing.Point(213, 219);
+            this.btn_Next.Location = new System.Drawing.Point(320, 337);
+            this.btn_Next.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Next.Name = "btn_Next";
-            this.btn_Next.Size = new System.Drawing.Size(75, 23);
+            this.btn_Next.Size = new System.Drawing.Size(112, 35);
             this.btn_Next.TabIndex = 40;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
@@ -168,9 +175,10 @@ namespace ProjectPCS
             // 
             // btn_Prev
             // 
-            this.btn_Prev.Location = new System.Drawing.Point(132, 219);
+            this.btn_Prev.Location = new System.Drawing.Point(198, 337);
+            this.btn_Prev.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Prev.Name = "btn_Prev";
-            this.btn_Prev.Size = new System.Drawing.Size(75, 23);
+            this.btn_Prev.Size = new System.Drawing.Size(112, 35);
             this.btn_Prev.TabIndex = 39;
             this.btn_Prev.Text = "Prev";
             this.btn_Prev.UseVisualStyleBackColor = true;
@@ -178,18 +186,20 @@ namespace ProjectPCS
             // 
             // btn_Top
             // 
-            this.btn_Top.Location = new System.Drawing.Point(51, 219);
+            this.btn_Top.Location = new System.Drawing.Point(76, 337);
+            this.btn_Top.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Top.Name = "btn_Top";
-            this.btn_Top.Size = new System.Drawing.Size(75, 23);
+            this.btn_Top.Size = new System.Drawing.Size(112, 35);
             this.btn_Top.TabIndex = 38;
             this.btn_Top.Text = "Top";
             this.btn_Top.UseVisualStyleBackColor = true;
             // 
             // btn_Browse
             // 
-            this.btn_Browse.Location = new System.Drawing.Point(577, 49);
+            this.btn_Browse.Location = new System.Drawing.Point(866, 75);
+            this.btn_Browse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Browse.Name = "btn_Browse";
-            this.btn_Browse.Size = new System.Drawing.Size(75, 23);
+            this.btn_Browse.Size = new System.Drawing.Size(112, 35);
             this.btn_Browse.TabIndex = 37;
             this.btn_Browse.Text = "Browse";
             this.btn_Browse.UseVisualStyleBackColor = true;
@@ -198,9 +208,10 @@ namespace ProjectPCS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(303, 41);
+            this.label1.Location = new System.Drawing.Point(454, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 31);
+            this.label1.Size = new System.Drawing.Size(364, 47);
             this.label1.TabIndex = 36;
             this.label1.Text = "Input Master Merk";
             // 
@@ -271,8 +282,9 @@ namespace ProjectPCS
             this.m_merkBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.m_merkBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.m_merkBindingNavigator.Name = "m_merkBindingNavigator";
+            this.m_merkBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.m_merkBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.m_merkBindingNavigator.Size = new System.Drawing.Size(913, 31);
+            this.m_merkBindingNavigator.Size = new System.Drawing.Size(1370, 33);
             this.m_merkBindingNavigator.TabIndex = 48;
             this.m_merkBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -282,13 +294,13 @@ namespace ProjectPCS
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -298,7 +310,7 @@ namespace ProjectPCS
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -307,7 +319,7 @@ namespace ProjectPCS
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -316,13 +328,13 @@ namespace ProjectPCS
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 33);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -330,14 +342,14 @@ namespace ProjectPCS
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(35, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 31);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 33);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -345,7 +357,7 @@ namespace ProjectPCS
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -354,47 +366,45 @@ namespace ProjectPCS
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 33);
             // 
             // m_merkBindingNavigatorSaveItem
             // 
             this.m_merkBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.m_merkBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("m_merkBindingNavigatorSaveItem.Image")));
             this.m_merkBindingNavigatorSaveItem.Name = "m_merkBindingNavigatorSaveItem";
-            this.m_merkBindingNavigatorSaveItem.Size = new System.Drawing.Size(28, 28);
+            this.m_merkBindingNavigatorSaveItem.Size = new System.Drawing.Size(34, 28);
             this.m_merkBindingNavigatorSaveItem.Text = "Save Data";
             this.m_merkBindingNavigatorSaveItem.Click += new System.EventHandler(this.m_merkBindingNavigatorSaveItem_Click);
             // 
             // iDTextBox
             // 
             this.iDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_merkBindingSource, "ID", true));
-            this.iDTextBox.Location = new System.Drawing.Point(398, 108);
-            this.iDTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.iDTextBox.Location = new System.Drawing.Point(597, 166);
             this.iDTextBox.Name = "iDTextBox";
-            this.iDTextBox.Size = new System.Drawing.Size(64, 20);
+            this.iDTextBox.Size = new System.Drawing.Size(94, 26);
             this.iDTextBox.TabIndex = 49;
             // 
             // mERK_DESCTextBox
             // 
             this.mERK_DESCTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_merkBindingSource, "MERK_DESC", true));
-            this.mERK_DESCTextBox.Location = new System.Drawing.Point(398, 143);
-            this.mERK_DESCTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.mERK_DESCTextBox.Location = new System.Drawing.Point(597, 220);
             this.mERK_DESCTextBox.Name = "mERK_DESCTextBox";
-            this.mERK_DESCTextBox.Size = new System.Drawing.Size(200, 20);
+            this.mERK_DESCTextBox.Size = new System.Drawing.Size(298, 26);
             this.mERK_DESCTextBox.TabIndex = 50;
             // 
             // masterMerk
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(913, 261);
+            this.ClientSize = new System.Drawing.Size(1370, 402);
             this.Controls.Add(mERK_DESCLabel);
             this.Controls.Add(this.mERK_DESCTextBox);
             this.Controls.Add(iDLabel);
@@ -412,6 +422,7 @@ namespace ProjectPCS
             this.Controls.Add(this.btn_Top);
             this.Controls.Add(this.btn_Browse);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "masterMerk";
             this.Text = "Master Merk";
             this.Load += new System.EventHandler(this.masterMerk_Load);

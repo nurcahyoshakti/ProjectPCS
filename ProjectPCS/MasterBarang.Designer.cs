@@ -108,130 +108,117 @@ namespace ProjectPCS
             // kODELabel
             // 
             kODELabel.AutoSize = true;
-            kODELabel.Location = new System.Drawing.Point(30, 120);
-            kODELabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            kODELabel.Location = new System.Drawing.Point(45, 185);
             kODELabel.Name = "kODELabel";
-            kODELabel.Size = new System.Drawing.Size(72, 13);
+            kODELabel.Size = new System.Drawing.Size(106, 20);
             kODELabel.TabIndex = 13;
             kODELabel.Text = "Kode Barang:";
             // 
             // pART_NOLabel
             // 
             pART_NOLabel.AutoSize = true;
-            pART_NOLabel.Location = new System.Drawing.Point(285, 120);
-            pART_NOLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            pART_NOLabel.Location = new System.Drawing.Point(428, 185);
             pART_NOLabel.Name = "pART_NOLabel";
-            pART_NOLabel.Size = new System.Drawing.Size(69, 13);
+            pART_NOLabel.Size = new System.Drawing.Size(102, 20);
             pART_NOLabel.TabIndex = 15;
             pART_NOLabel.Text = "Part Number:";
             // 
             // pN1Label
             // 
             pN1Label.AutoSize = true;
-            pN1Label.Location = new System.Drawing.Point(529, 120);
-            pN1Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            pN1Label.Location = new System.Drawing.Point(794, 185);
             pN1Label.Name = "pN1Label";
-            pN1Label.Size = new System.Drawing.Size(45, 13);
+            pN1Label.Size = new System.Drawing.Size(59, 20);
             pN1Label.TabIndex = 17;
             pN1Label.Text = "P / N 1:";
             // 
             // uNIT_PRICELabel
             // 
             uNIT_PRICELabel.AutoSize = true;
-            uNIT_PRICELabel.Location = new System.Drawing.Point(747, 120);
-            uNIT_PRICELabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            uNIT_PRICELabel.Location = new System.Drawing.Point(1120, 185);
             uNIT_PRICELabel.Name = "uNIT_PRICELabel";
-            uNIT_PRICELabel.Size = new System.Drawing.Size(76, 13);
+            uNIT_PRICELabel.Size = new System.Drawing.Size(113, 20);
             uNIT_PRICELabel.TabIndex = 19;
             uNIT_PRICELabel.Text = "Harga Satuan:";
             // 
             // uNITLabel
             // 
             uNITLabel.AutoSize = true;
-            uNITLabel.Location = new System.Drawing.Point(480, 161);
-            uNITLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            uNITLabel.Location = new System.Drawing.Point(720, 248);
             uNITLabel.Name = "uNITLabel";
-            uNITLabel.Size = new System.Drawing.Size(29, 13);
+            uNITLabel.Size = new System.Drawing.Size(42, 20);
             uNITLabel.TabIndex = 21;
             uNITLabel.Text = "Unit:";
             // 
             // dESCRIPTIONLabel
             // 
             dESCRIPTIONLabel.AutoSize = true;
-            dESCRIPTIONLabel.Location = new System.Drawing.Point(27, 162);
-            dESCRIPTIONLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            dESCRIPTIONLabel.Location = new System.Drawing.Point(40, 249);
             dESCRIPTIONLabel.Name = "dESCRIPTIONLabel";
-            dESCRIPTIONLabel.Size = new System.Drawing.Size(75, 13);
+            dESCRIPTIONLabel.Size = new System.Drawing.Size(111, 20);
             dESCRIPTIONLabel.TabIndex = 23;
             dESCRIPTIONLabel.Text = "Nama Barang:";
             // 
             // sTAMPINGLabel
             // 
             sTAMPINGLabel.AutoSize = true;
-            sTAMPINGLabel.Location = new System.Drawing.Point(48, 237);
-            sTAMPINGLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            sTAMPINGLabel.Location = new System.Drawing.Point(72, 365);
             sTAMPINGLabel.Name = "sTAMPINGLabel";
-            sTAMPINGLabel.Size = new System.Drawing.Size(54, 13);
+            sTAMPINGLabel.Size = new System.Drawing.Size(81, 20);
             sTAMPINGLabel.TabIndex = 25;
             sTAMPINGLabel.Text = "Stamping:";
             // 
             // dATA_FISIKLabel
             // 
             dATA_FISIKLabel.AutoSize = true;
-            dATA_FISIKLabel.Location = new System.Drawing.Point(327, 237);
-            dATA_FISIKLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            dATA_FISIKLabel.Location = new System.Drawing.Point(490, 365);
             dATA_FISIKLabel.Name = "dATA_FISIKLabel";
-            dATA_FISIKLabel.Size = new System.Drawing.Size(57, 13);
+            dATA_FISIKLabel.Size = new System.Drawing.Size(84, 20);
             dATA_FISIKLabel.TabIndex = 27;
             dATA_FISIKLabel.Text = "Data Fisik:";
             // 
             // pERSAMAANLabel
             // 
             pERSAMAANLabel.AutoSize = true;
-            pERSAMAANLabel.Location = new System.Drawing.Point(619, 237);
-            pERSAMAANLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            pERSAMAANLabel.Location = new System.Drawing.Point(928, 365);
             pERSAMAANLabel.Name = "pERSAMAANLabel";
-            pERSAMAANLabel.Size = new System.Drawing.Size(63, 13);
+            pERSAMAANLabel.Size = new System.Drawing.Size(94, 20);
             pERSAMAANLabel.TabIndex = 29;
             pERSAMAANLabel.Text = "Persamaan:";
             // 
             // mERK1Label
             // 
             mERK1Label.AutoSize = true;
-            mERK1Label.Location = new System.Drawing.Point(57, 270);
-            mERK1Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            mERK1Label.Location = new System.Drawing.Point(86, 415);
             mERK1Label.Name = "mERK1Label";
-            mERK1Label.Size = new System.Drawing.Size(43, 13);
+            mERK1Label.Size = new System.Drawing.Size(61, 20);
             mERK1Label.TabIndex = 31;
             mERK1Label.Text = "Merk 1:";
             // 
             // mERK2Label
             // 
             mERK2Label.AutoSize = true;
-            mERK2Label.Location = new System.Drawing.Point(339, 271);
-            mERK2Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            mERK2Label.Location = new System.Drawing.Point(508, 417);
             mERK2Label.Name = "mERK2Label";
-            mERK2Label.Size = new System.Drawing.Size(43, 13);
+            mERK2Label.Size = new System.Drawing.Size(61, 20);
             mERK2Label.TabIndex = 33;
             mERK2Label.Text = "Merk 2:";
             // 
             // mERK3Label
             // 
             mERK3Label.AutoSize = true;
-            mERK3Label.Location = new System.Drawing.Point(637, 271);
-            mERK3Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            mERK3Label.Location = new System.Drawing.Point(956, 417);
             mERK3Label.Name = "mERK3Label";
-            mERK3Label.Size = new System.Drawing.Size(43, 13);
+            mERK3Label.Size = new System.Drawing.Size(61, 20);
             mERK3Label.TabIndex = 35;
             mERK3Label.Text = "Merk 3:";
             // 
             // kETERANGANLabel
             // 
             kETERANGANLabel.AutoSize = true;
-            kETERANGANLabel.Location = new System.Drawing.Point(69, 346);
-            kETERANGANLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            kETERANGANLabel.Location = new System.Drawing.Point(104, 532);
             kETERANGANLabel.Name = "kETERANGANLabel";
-            kETERANGANLabel.Size = new System.Drawing.Size(33, 13);
+            kETERANGANLabel.Size = new System.Drawing.Size(47, 20);
             kETERANGANLabel.TabIndex = 37;
             kETERANGANLabel.Text = "Note:";
             // 
@@ -239,18 +226,20 @@ namespace ProjectPCS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(324, 40);
+            this.label1.Location = new System.Drawing.Point(486, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 31);
+            this.label1.Size = new System.Drawing.Size(397, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "Input Master Barang";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_Browse
             // 
-            this.btn_Browse.Location = new System.Drawing.Point(604, 48);
+            this.btn_Browse.Location = new System.Drawing.Point(906, 74);
+            this.btn_Browse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Browse.Name = "btn_Browse";
-            this.btn_Browse.Size = new System.Drawing.Size(75, 23);
+            this.btn_Browse.Size = new System.Drawing.Size(112, 35);
             this.btn_Browse.TabIndex = 1;
             this.btn_Browse.Text = "Browse";
             this.btn_Browse.UseVisualStyleBackColor = true;
@@ -258,18 +247,20 @@ namespace ProjectPCS
             // 
             // btn_Top
             // 
-            this.btn_Top.Location = new System.Drawing.Point(92, 405);
+            this.btn_Top.Location = new System.Drawing.Point(138, 623);
+            this.btn_Top.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Top.Name = "btn_Top";
-            this.btn_Top.Size = new System.Drawing.Size(75, 23);
+            this.btn_Top.Size = new System.Drawing.Size(112, 35);
             this.btn_Top.TabIndex = 2;
             this.btn_Top.Text = "Top";
             this.btn_Top.UseVisualStyleBackColor = true;
             // 
             // btn_Prev
             // 
-            this.btn_Prev.Location = new System.Drawing.Point(173, 405);
+            this.btn_Prev.Location = new System.Drawing.Point(260, 623);
+            this.btn_Prev.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Prev.Name = "btn_Prev";
-            this.btn_Prev.Size = new System.Drawing.Size(75, 23);
+            this.btn_Prev.Size = new System.Drawing.Size(112, 35);
             this.btn_Prev.TabIndex = 3;
             this.btn_Prev.Text = "Prev";
             this.btn_Prev.UseVisualStyleBackColor = true;
@@ -277,9 +268,10 @@ namespace ProjectPCS
             // 
             // btn_Next
             // 
-            this.btn_Next.Location = new System.Drawing.Point(254, 405);
+            this.btn_Next.Location = new System.Drawing.Point(381, 623);
+            this.btn_Next.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Next.Name = "btn_Next";
-            this.btn_Next.Size = new System.Drawing.Size(75, 23);
+            this.btn_Next.Size = new System.Drawing.Size(112, 35);
             this.btn_Next.TabIndex = 4;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = true;
@@ -287,63 +279,71 @@ namespace ProjectPCS
             // 
             // btn_Bottom
             // 
-            this.btn_Bottom.Location = new System.Drawing.Point(335, 405);
+            this.btn_Bottom.Location = new System.Drawing.Point(502, 623);
+            this.btn_Bottom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Bottom.Name = "btn_Bottom";
-            this.btn_Bottom.Size = new System.Drawing.Size(75, 23);
+            this.btn_Bottom.Size = new System.Drawing.Size(112, 35);
             this.btn_Bottom.TabIndex = 5;
             this.btn_Bottom.Text = "Bottom";
             this.btn_Bottom.UseVisualStyleBackColor = true;
             // 
             // btn_Find
             // 
-            this.btn_Find.Location = new System.Drawing.Point(416, 405);
+            this.btn_Find.Location = new System.Drawing.Point(624, 623);
+            this.btn_Find.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Find.Name = "btn_Find";
-            this.btn_Find.Size = new System.Drawing.Size(75, 23);
+            this.btn_Find.Size = new System.Drawing.Size(112, 35);
             this.btn_Find.TabIndex = 6;
             this.btn_Find.Text = "Find";
             this.btn_Find.UseVisualStyleBackColor = true;
             // 
             // btn_Print
             // 
-            this.btn_Print.Location = new System.Drawing.Point(497, 405);
+            this.btn_Print.Location = new System.Drawing.Point(746, 623);
+            this.btn_Print.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Print.Name = "btn_Print";
-            this.btn_Print.Size = new System.Drawing.Size(75, 23);
+            this.btn_Print.Size = new System.Drawing.Size(112, 35);
             this.btn_Print.TabIndex = 7;
             this.btn_Print.Text = "Print";
             this.btn_Print.UseVisualStyleBackColor = true;
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(578, 405);
+            this.btn_Add.Location = new System.Drawing.Point(867, 623);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(75, 23);
+            this.btn_Add.Size = new System.Drawing.Size(112, 35);
             this.btn_Add.TabIndex = 8;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Edit
             // 
-            this.btn_Edit.Location = new System.Drawing.Point(659, 405);
+            this.btn_Edit.Location = new System.Drawing.Point(988, 623);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Edit.Size = new System.Drawing.Size(112, 35);
             this.btn_Edit.TabIndex = 9;
             this.btn_Edit.Text = "Edit";
             this.btn_Edit.UseVisualStyleBackColor = true;
             // 
             // btn_Delete
             // 
-            this.btn_Delete.Location = new System.Drawing.Point(740, 405);
+            this.btn_Delete.Location = new System.Drawing.Point(1110, 623);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_Delete.Size = new System.Drawing.Size(112, 35);
             this.btn_Delete.TabIndex = 10;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = true;
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Location = new System.Drawing.Point(821, 405);
+            this.btn_Exit.Location = new System.Drawing.Point(1232, 623);
+            this.btn_Exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Exit.Size = new System.Drawing.Size(112, 35);
             this.btn_Exit.TabIndex = 11;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
@@ -416,8 +416,9 @@ namespace ProjectPCS
             this.m_barangBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.m_barangBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.m_barangBindingNavigator.Name = "m_barangBindingNavigator";
+            this.m_barangBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.m_barangBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.m_barangBindingNavigator.Size = new System.Drawing.Size(988, 31);
+            this.m_barangBindingNavigator.Size = new System.Drawing.Size(1482, 38);
             this.m_barangBindingNavigator.TabIndex = 12;
             this.m_barangBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -427,13 +428,13 @@ namespace ProjectPCS
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(34, 33);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -443,7 +444,7 @@ namespace ProjectPCS
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -452,7 +453,7 @@ namespace ProjectPCS
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -461,13 +462,13 @@ namespace ProjectPCS
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 33);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -475,14 +476,14 @@ namespace ProjectPCS
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(35, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 31);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 33);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -490,7 +491,7 @@ namespace ProjectPCS
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -499,146 +500,133 @@ namespace ProjectPCS
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 33);
             // 
             // m_barangBindingNavigatorSaveItem
             // 
             this.m_barangBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.m_barangBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("m_barangBindingNavigatorSaveItem.Image")));
             this.m_barangBindingNavigatorSaveItem.Name = "m_barangBindingNavigatorSaveItem";
-            this.m_barangBindingNavigatorSaveItem.Size = new System.Drawing.Size(28, 28);
+            this.m_barangBindingNavigatorSaveItem.Size = new System.Drawing.Size(34, 28);
             this.m_barangBindingNavigatorSaveItem.Text = "Save Data";
             this.m_barangBindingNavigatorSaveItem.Click += new System.EventHandler(this.m_barangBindingNavigatorSaveItem_Click);
             // 
             // kODETextBox
             // 
             this.kODETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "KODE", true));
-            this.kODETextBox.Location = new System.Drawing.Point(106, 117);
-            this.kODETextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.kODETextBox.Location = new System.Drawing.Point(159, 180);
             this.kODETextBox.Name = "kODETextBox";
-            this.kODETextBox.Size = new System.Drawing.Size(129, 20);
+            this.kODETextBox.Size = new System.Drawing.Size(192, 26);
             this.kODETextBox.TabIndex = 14;
             // 
             // pART_NOTextBox
             // 
             this.pART_NOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "PART_NO", true));
-            this.pART_NOTextBox.Location = new System.Drawing.Point(358, 117);
-            this.pART_NOTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pART_NOTextBox.Location = new System.Drawing.Point(537, 180);
             this.pART_NOTextBox.Name = "pART_NOTextBox";
-            this.pART_NOTextBox.Size = new System.Drawing.Size(129, 20);
+            this.pART_NOTextBox.Size = new System.Drawing.Size(192, 26);
             this.pART_NOTextBox.TabIndex = 16;
             // 
             // pN1TextBox
             // 
             this.pN1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "PN1", true));
-            this.pN1TextBox.Location = new System.Drawing.Point(578, 117);
-            this.pN1TextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pN1TextBox.Location = new System.Drawing.Point(867, 180);
             this.pN1TextBox.Name = "pN1TextBox";
-            this.pN1TextBox.Size = new System.Drawing.Size(129, 20);
+            this.pN1TextBox.Size = new System.Drawing.Size(192, 26);
             this.pN1TextBox.TabIndex = 18;
             // 
             // uNIT_PRICETextBox
             // 
             this.uNIT_PRICETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "UNIT_PRICE", true));
-            this.uNIT_PRICETextBox.Location = new System.Drawing.Point(827, 117);
-            this.uNIT_PRICETextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.uNIT_PRICETextBox.Location = new System.Drawing.Point(1240, 180);
             this.uNIT_PRICETextBox.Name = "uNIT_PRICETextBox";
-            this.uNIT_PRICETextBox.Size = new System.Drawing.Size(129, 20);
+            this.uNIT_PRICETextBox.Size = new System.Drawing.Size(192, 26);
             this.uNIT_PRICETextBox.TabIndex = 20;
             // 
             // uNITTextBox
             // 
             this.uNITTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "UNIT", true));
-            this.uNITTextBox.Location = new System.Drawing.Point(513, 159);
-            this.uNITTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.uNITTextBox.Location = new System.Drawing.Point(770, 245);
             this.uNITTextBox.Name = "uNITTextBox";
-            this.uNITTextBox.Size = new System.Drawing.Size(348, 20);
+            this.uNITTextBox.Size = new System.Drawing.Size(520, 26);
             this.uNITTextBox.TabIndex = 22;
             // 
             // dESCRIPTIONTextBox
             // 
             this.dESCRIPTIONTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "DESCRIPTION", true));
-            this.dESCRIPTIONTextBox.Location = new System.Drawing.Point(106, 159);
-            this.dESCRIPTIONTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.dESCRIPTIONTextBox.Location = new System.Drawing.Point(159, 245);
             this.dESCRIPTIONTextBox.Name = "dESCRIPTIONTextBox";
-            this.dESCRIPTIONTextBox.Size = new System.Drawing.Size(348, 20);
+            this.dESCRIPTIONTextBox.Size = new System.Drawing.Size(520, 26);
             this.dESCRIPTIONTextBox.TabIndex = 24;
             // 
             // sTAMPINGTextBox
             // 
             this.sTAMPINGTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "STAMPING", true));
-            this.sTAMPINGTextBox.Location = new System.Drawing.Point(106, 234);
-            this.sTAMPINGTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.sTAMPINGTextBox.Location = new System.Drawing.Point(159, 360);
             this.sTAMPINGTextBox.Name = "sTAMPINGTextBox";
-            this.sTAMPINGTextBox.Size = new System.Drawing.Size(186, 20);
+            this.sTAMPINGTextBox.Size = new System.Drawing.Size(277, 26);
             this.sTAMPINGTextBox.TabIndex = 26;
             // 
             // dATA_FISIKTextBox
             // 
             this.dATA_FISIKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "DATA_FISIK", true));
-            this.dATA_FISIKTextBox.Location = new System.Drawing.Point(388, 234);
-            this.dATA_FISIKTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.dATA_FISIKTextBox.Location = new System.Drawing.Point(582, 360);
             this.dATA_FISIKTextBox.Name = "dATA_FISIKTextBox";
-            this.dATA_FISIKTextBox.Size = new System.Drawing.Size(186, 20);
+            this.dATA_FISIKTextBox.Size = new System.Drawing.Size(277, 26);
             this.dATA_FISIKTextBox.TabIndex = 28;
             // 
             // pERSAMAANTextBox
             // 
             this.pERSAMAANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "PERSAMAAN", true));
-            this.pERSAMAANTextBox.Location = new System.Drawing.Point(686, 234);
-            this.pERSAMAANTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pERSAMAANTextBox.Location = new System.Drawing.Point(1029, 360);
             this.pERSAMAANTextBox.Name = "pERSAMAANTextBox";
-            this.pERSAMAANTextBox.Size = new System.Drawing.Size(186, 20);
+            this.pERSAMAANTextBox.Size = new System.Drawing.Size(277, 26);
             this.pERSAMAANTextBox.TabIndex = 30;
             // 
             // mERK1TextBox
             // 
             this.mERK1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "MERK1", true));
-            this.mERK1TextBox.Location = new System.Drawing.Point(106, 268);
-            this.mERK1TextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.mERK1TextBox.Location = new System.Drawing.Point(159, 412);
             this.mERK1TextBox.Name = "mERK1TextBox";
-            this.mERK1TextBox.Size = new System.Drawing.Size(186, 20);
+            this.mERK1TextBox.Size = new System.Drawing.Size(277, 26);
             this.mERK1TextBox.TabIndex = 32;
             // 
             // mERK2TextBox
             // 
             this.mERK2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "MERK2", true));
-            this.mERK2TextBox.Location = new System.Drawing.Point(388, 268);
-            this.mERK2TextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.mERK2TextBox.Location = new System.Drawing.Point(582, 412);
             this.mERK2TextBox.Name = "mERK2TextBox";
-            this.mERK2TextBox.Size = new System.Drawing.Size(186, 20);
+            this.mERK2TextBox.Size = new System.Drawing.Size(277, 26);
             this.mERK2TextBox.TabIndex = 34;
             // 
             // mERK3TextBox
             // 
             this.mERK3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "MERK3", true));
-            this.mERK3TextBox.Location = new System.Drawing.Point(686, 268);
-            this.mERK3TextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.mERK3TextBox.Location = new System.Drawing.Point(1029, 412);
             this.mERK3TextBox.Name = "mERK3TextBox";
-            this.mERK3TextBox.Size = new System.Drawing.Size(186, 20);
+            this.mERK3TextBox.Size = new System.Drawing.Size(277, 26);
             this.mERK3TextBox.TabIndex = 36;
             // 
             // kETERANGANTextBox
             // 
             this.kETERANGANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_barangBindingSource, "KETERANGAN", true));
-            this.kETERANGANTextBox.Location = new System.Drawing.Point(106, 343);
-            this.kETERANGANTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.kETERANGANTextBox.Location = new System.Drawing.Point(159, 528);
             this.kETERANGANTextBox.Name = "kETERANGANTextBox";
-            this.kETERANGANTextBox.Size = new System.Drawing.Size(766, 20);
+            this.kETERANGANTextBox.Size = new System.Drawing.Size(1147, 26);
             this.kETERANGANTextBox.TabIndex = 38;
             // 
             // masterBarang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(988, 450);
+            this.ClientSize = new System.Drawing.Size(1482, 692);
             this.Controls.Add(kETERANGANLabel);
             this.Controls.Add(this.kETERANGANTextBox);
             this.Controls.Add(mERK3Label);
@@ -678,6 +666,7 @@ namespace ProjectPCS
             this.Controls.Add(this.btn_Top);
             this.Controls.Add(this.btn_Browse);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "masterBarang";
             this.Text = "Input Master Barang";
             this.Load += new System.EventHandler(this.masterBarang_Load);
