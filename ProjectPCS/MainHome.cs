@@ -46,7 +46,7 @@ namespace ProjectPCS
         private void btn_mSupplier_Click(object sender, EventArgs e)
         {
             this.Hide();
-            masterSupplier f = new masterSupplier();
+            viewMasterSupplier f = new viewMasterSupplier();
             f.Show();
         }
 

@@ -114,6 +114,12 @@
     <Compile Include="viewMasterBarang.Designer.cs">
       <DependentUpon>viewMasterBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewMasterSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewMasterSupplier.Designer.cs">
+      <DependentUpon>viewMasterSupplier.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="viewMasterPelanggan.resx">
       <DependentUpon>viewMasterPelanggan.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +158,9 @@
     </Compile>
     <EmbeddedResource Include="viewMasterBarang.resx">
       <DependentUpon>viewMasterBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewMasterSupplier.resx">
+      <DependentUpon>viewMasterSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
