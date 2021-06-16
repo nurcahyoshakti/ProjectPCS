@@ -63,10 +63,7 @@ namespace ProjectPCS
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            this.m_barangBindingSource.AddNew();
-            //this.Validate();
-            //this.m_barangBindingSource.EndEdit();
-            //this.tableAdapterManager.UpdateAll(this.uASDataSet);
+            
         }
     }
 }

@@ -101,6 +101,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UASDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="viewMasterBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewMasterBarang.Designer.cs">
+      <DependentUpon>viewMasterBarang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MasterGroupUser.resx">
       <DependentUpon>MasterGroupUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +140,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="viewMasterBarang.resx">
+      <DependentUpon>viewMasterBarang.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
