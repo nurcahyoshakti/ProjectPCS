@@ -32,7 +32,7 @@ namespace ProjectPCS
         private void btn_mPelanggan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            masterPelanggan f = new masterPelanggan();
+            viewMasterPelanggan f = new viewMasterPelanggan();
             f.Show();
         }
 
