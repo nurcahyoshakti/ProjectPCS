@@ -25,7 +25,7 @@ namespace ProjectPCS
         private void btn_mBarang_Click(object sender, EventArgs e)
         {
             this.Hide();
-            masterBarang f = new masterBarang();
+            viewMasterBarang f = new viewMasterBarang();
             f.Show();
         }
 
