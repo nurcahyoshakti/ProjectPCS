@@ -18,6 +18,9 @@ namespace ProjectPCS
         SqlCommand cmd;
         ConnectionDB db = new ConnectionDB();
         viewMasterPelanggan f;
+        SqlDataAdapter da;
+
+        BindingSource bss = new BindingSource();
 
         public masterPelanggan(viewMasterPelanggan f)
         {
@@ -41,21 +44,35 @@ namespace ProjectPCS
             // TODO: This line of code loads data into the 'uASDataSet.m_pelanggan' table. You can move, or remove it, as needed.
             this.m_pelangganTableAdapter.Fill(this.uASDataSet.m_pelanggan);
 
-        }
+            String sql = "Select * from m_pelanggan";
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(sql, con);
+            da.Fill(dt);
+            bss.DataSource = dt;
 
-        private void aLAMAT_NPWPTextBox_TextChanged(object sender, EventArgs e)
-        {
-
+            tb_kode.DataBindings.Add(new Binding("Text", bss, "P_CODE"));
+            tb_nama.DataBindings.Add(new Binding("Text", bss, "NAMA"));
+            tb_almt.DataBindings.Add(new Binding("Text", bss, "ALAMAT"));
+            tb_kota.DataBindings.Add(new Binding("Text", bss, "KOTA"));
+            tb_telpn.DataBindings.Add(new Binding("Text", bss, "TELP"));
+            tb_npwp.DataBindings.Add(new Binding("Text", bss, "NPWP"));
+            tb_nmnpwp.DataBindings.Add(new Binding("Text", bss, "NAMA_NPWP"));
+            tb_almtnpwp.DataBindings.Add(new Binding("Text", bss, "ALAMAT_NPWP"));
+            tb_nama2.DataBindings.Add(new Binding("Text", bss, "NAMA1"));
+            tb_almt2.DataBindings.Add(new Binding("Text", bss, "ALAMAT1"));
+            tb_kota2.DataBindings.Add(new Binding("Text", bss, "KOTA1"));
+            tb_hp.DataBindings.Add(new Binding("Text", bss, "HP"));
+            tb_note.DataBindings.Add(new Binding("Text", bss, "KETERANGAN"));
         }
 
         private void btn_Prev_Click(object sender, EventArgs e)
         {
-
+            bss.MovePrevious();
         }
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-
+            bss.MoveNext();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -177,6 +194,23 @@ namespace ProjectPCS
                 con.Close();
                 MessageBox.Show(ex.Message, "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btn_Browse_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            viewMasterPelanggan f = new viewMasterPelanggan();
+            f.ShowDialog();
+        }
+
+        private void btn_Top_Click(object sender, EventArgs e)
+        {
+            bss.MoveFirst();
+        }
+
+        private void btn_Bottom_Click(object sender, EventArgs e)
+        {
+            bss.MoveLast();
         }
     }
 }

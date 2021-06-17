@@ -75,14 +75,13 @@ namespace ProjectPCS
             this.Column13,
             this.column_edited,
             this.column_deleted});
-            this.dgv_masterBarang.Location = new System.Drawing.Point(0, 49);
-            this.dgv_masterBarang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgv_masterBarang.Location = new System.Drawing.Point(0, 32);
             this.dgv_masterBarang.Name = "dgv_masterBarang";
             this.dgv_masterBarang.ReadOnly = true;
             this.dgv_masterBarang.RowHeadersVisible = false;
             this.dgv_masterBarang.RowHeadersWidth = 62;
             this.dgv_masterBarang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_masterBarang.Size = new System.Drawing.Size(1737, 637);
+            this.dgv_masterBarang.Size = new System.Drawing.Size(1128, 414);
             this.dgv_masterBarang.TabIndex = 3;
             this.dgv_masterBarang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_masterBarang_CellContentClick);
             // 
@@ -93,7 +92,7 @@ namespace ProjectPCS
             this.Column14.MinimumWidth = 8;
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
-            this.Column14.Width = 54;
+            this.Column14.Width = 39;
             // 
             // Column1
             // 
@@ -102,7 +101,7 @@ namespace ProjectPCS
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 90;
+            this.Column1.Width = 62;
             // 
             // Column2
             // 
@@ -111,7 +110,7 @@ namespace ProjectPCS
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 114;
+            this.Column2.Width = 80;
             // 
             // Column3
             // 
@@ -120,7 +119,7 @@ namespace ProjectPCS
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 114;
+            this.Column3.Width = 77;
             // 
             // Column4
             // 
@@ -129,7 +128,7 @@ namespace ProjectPCS
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 104;
+            this.Column4.Width = 70;
             // 
             // Column5
             // 
@@ -138,7 +137,7 @@ namespace ProjectPCS
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 82;
+            this.Column5.Width = 58;
             // 
             // Column6
             // 
@@ -147,7 +146,7 @@ namespace ProjectPCS
             this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
-            this.Column6.Width = 128;
+            this.Column6.Width = 88;
             // 
             // Column7
             // 
@@ -156,7 +155,7 @@ namespace ProjectPCS
             this.Column7.MinimumWidth = 8;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
-            this.Column7.Width = 133;
+            this.Column7.Width = 90;
             // 
             // Column8
             // 
@@ -165,7 +164,7 @@ namespace ProjectPCS
             this.Column8.MinimumWidth = 8;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Width = 146;
+            this.Column8.Width = 99;
             // 
             // Column9
             // 
@@ -174,7 +173,7 @@ namespace ProjectPCS
             this.Column9.MinimumWidth = 8;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            this.Column9.Width = 87;
+            this.Column9.Width = 64;
             // 
             // Column10
             // 
@@ -183,7 +182,7 @@ namespace ProjectPCS
             this.Column10.MinimumWidth = 8;
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
-            this.Column10.Width = 104;
+            this.Column10.Width = 72;
             // 
             // Column11
             // 
@@ -192,7 +191,7 @@ namespace ProjectPCS
             this.Column11.MinimumWidth = 8;
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
-            this.Column11.Width = 104;
+            this.Column11.Width = 72;
             // 
             // Column12
             // 
@@ -201,16 +200,15 @@ namespace ProjectPCS
             this.Column12.MinimumWidth = 8;
             this.Column12.Name = "Column12";
             this.Column12.ReadOnly = true;
-            this.Column12.Width = 104;
+            this.Column12.Width = 72;
             // 
             // Column13
             // 
-            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column13.HeaderText = "KETERANGAN";
             this.Column13.MinimumWidth = 8;
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
-            this.Column13.Width = 155;
             // 
             // column_edited
             // 
@@ -237,18 +235,16 @@ namespace ProjectPCS
             this.panel1.Controls.Add(this.btn_addData);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1742, 52);
+            this.panel1.Size = new System.Drawing.Size(1128, 34);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btn_addData
             // 
-            this.btn_addData.Location = new System.Drawing.Point(4, 5);
-            this.btn_addData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_addData.Location = new System.Drawing.Point(3, 3);
             this.btn_addData.Name = "btn_addData";
-            this.btn_addData.Size = new System.Drawing.Size(192, 35);
+            this.btn_addData.Size = new System.Drawing.Size(128, 23);
             this.btn_addData.TabIndex = 0;
             this.btn_addData.Text = "Add Data";
             this.btn_addData.UseVisualStyleBackColor = true;
@@ -256,15 +252,14 @@ namespace ProjectPCS
             // 
             // viewMasterBarang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1742, 692);
+            this.ClientSize = new System.Drawing.Size(1128, 450);
             this.Controls.Add(this.dgv_masterBarang);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "viewMasterBarang";
-            this.Text = "viewMasterBarang";
+            this.Text = "Tabel Barang";
             this.Load += new System.EventHandler(this.viewMasterBarang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_masterBarang)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -275,6 +270,8 @@ namespace ProjectPCS
         #endregion
 
         private System.Windows.Forms.DataGridView dgv_masterBarang;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_addData;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -291,7 +288,5 @@ namespace ProjectPCS
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewImageColumn column_edited;
         private System.Windows.Forms.DataGridViewImageColumn column_deleted;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_addData;
     }
 }

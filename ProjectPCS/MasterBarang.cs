@@ -17,6 +17,9 @@ namespace ProjectPCS
         SqlCommand cmd;
         ConnectionDB db = new ConnectionDB();
         viewMasterBarang f;
+        SqlDataAdapter da;
+
+        BindingSource bss = new BindingSource();
 
         public masterBarang(viewMasterBarang f)
         {
@@ -28,6 +31,7 @@ namespace ProjectPCS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             viewMasterBarang f = new viewMasterBarang();
             f.ShowDialog();
         }
@@ -50,16 +54,35 @@ namespace ProjectPCS
             // TODO: This line of code loads data into the 'uASDataSet.m_barang' table. You can move, or remove it, as needed.
             this.m_barangTableAdapter.Fill(this.uASDataSet.m_barang);
 
+            String sql = "Select * from m_barang";
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(sql, con);
+            da.Fill(dt);
+            bss.DataSource = dt;
+
+            tb_KodeBarang.DataBindings.Add(new Binding("Text", bss, "KODE"));
+            tb_partNumber.DataBindings.Add(new Binding("Text", bss, "PART_NO"));
+            tb_namaBarang.DataBindings.Add(new Binding("Text", bss, "DESCRIPTION"));
+            tb_unitPrice.DataBindings.Add(new Binding("Text", bss, "UNIT_PRICE"));
+            tb_unit.DataBindings.Add(new Binding("Text", bss, "UNIT"));
+            tb_stamping.DataBindings.Add(new Binding("Text", bss, "STAMPING"));
+            tb_dataFisik.DataBindings.Add(new Binding("Text", bss, "DATA_FISIK"));
+            tb_persamaan.DataBindings.Add(new Binding("Text", bss, "PERSAMAAN"));
+            tb_PN1.DataBindings.Add(new Binding("Text", bss, "PN1"));
+            tb_merk1.DataBindings.Add(new Binding("Text", bss, "MERK1"));
+            tb_merk2.DataBindings.Add(new Binding("Text", bss, "MERK2"));
+            tb_merk3.DataBindings.Add(new Binding("Text", bss, "MERK3"));
+            tb_Note.DataBindings.Add(new Binding("Text", bss, "KETERANGAN"));
         }
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            
+            bss.MoveNext();
         }
 
         private void btn_Prev_Click(object sender, EventArgs e)
         {
-            
+            bss.MovePrevious();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -165,6 +188,16 @@ namespace ProjectPCS
                 con.Close();
                 MessageBox.Show(ex.Message, "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btn_Top_Click(object sender, EventArgs e)
+        {
+            bss.MoveFirst();
+        }
+
+        private void btn_Bottom_Click(object sender, EventArgs e)
+        {
+            bss.MoveLast();
         }
     }
 }

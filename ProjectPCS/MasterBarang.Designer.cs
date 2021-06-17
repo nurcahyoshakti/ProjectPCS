@@ -264,6 +264,7 @@ namespace ProjectPCS
             this.btn_Top.TabIndex = 2;
             this.btn_Top.Text = "Top";
             this.btn_Top.UseVisualStyleBackColor = true;
+            this.btn_Top.Click += new System.EventHandler(this.btn_Top_Click);
             // 
             // btn_Prev
             // 
@@ -293,6 +294,7 @@ namespace ProjectPCS
             this.btn_Bottom.TabIndex = 5;
             this.btn_Bottom.Text = "Bottom";
             this.btn_Bottom.UseVisualStyleBackColor = true;
+            this.btn_Bottom.Click += new System.EventHandler(this.btn_Bottom_Click);
             // 
             // btn_Find
             // 
@@ -476,6 +478,7 @@ namespace ProjectPCS
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(35, 23);
             this.bindingNavigatorPositionItem.Text = "0";

@@ -44,6 +44,7 @@ namespace ProjectPCS
 
         private void btn_addData_Click(object sender, EventArgs e)
         {
+            this.Hide();
             masterBarang f = new masterBarang(this);
             f.btn_Add.Enabled = true;
             f.btn_Edit.Enabled = false;

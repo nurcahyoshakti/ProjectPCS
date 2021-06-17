@@ -10,7 +10,7 @@ namespace ProjectPCS
     {
         public string GetConnection()
         {
-            string con = @"Data Source =.\SQLExpress;Initial Catalog = UAS; User ID = sa; Password=admin123";
+            string con = @"Data Source =.\SQLExpress;Initial Catalog = UAS; User ID = sa; Password=surabaya123321";
             return con;
         }
     }
