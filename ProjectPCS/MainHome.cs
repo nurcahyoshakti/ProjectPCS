@@ -39,7 +39,7 @@ namespace ProjectPCS
         private void btn_mModel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            masterModel f = new masterModel();
+            viewMasterModel f = new viewMasterModel();
             f.Show();
         }
 

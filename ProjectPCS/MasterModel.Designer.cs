@@ -62,8 +62,8 @@ namespace ProjectPCS
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.m_modelBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.mODEL_IDTextBox = new System.Windows.Forms.TextBox();
-            this.dESCRIPTIONTextBox = new System.Windows.Forms.TextBox();
+            this.tb_modelid = new System.Windows.Forms.TextBox();
+            this.tb_desc = new System.Windows.Forms.TextBox();
             mODEL_IDLabel = new System.Windows.Forms.Label();
             dESCRIPTIONLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uASDataSet)).BeginInit();
@@ -120,6 +120,7 @@ namespace ProjectPCS
             this.btn_Edit.TabIndex = 33;
             this.btn_Edit.Text = "Edit";
             this.btn_Edit.UseVisualStyleBackColor = true;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // btn_Add
             // 
@@ -161,6 +162,7 @@ namespace ProjectPCS
             this.btn_Bottom.TabIndex = 29;
             this.btn_Bottom.Text = "Bottom";
             this.btn_Bottom.UseVisualStyleBackColor = true;
+            this.btn_Bottom.Click += new System.EventHandler(this.btn_Bottom_Click);
             // 
             // btn_Next
             // 
@@ -193,6 +195,7 @@ namespace ProjectPCS
             this.btn_Top.TabIndex = 26;
             this.btn_Top.Text = "Top";
             this.btn_Top.UseVisualStyleBackColor = true;
+            this.btn_Top.Click += new System.EventHandler(this.btn_Top_Click);
             // 
             // btn_Browse
             // 
@@ -203,6 +206,7 @@ namespace ProjectPCS
             this.btn_Browse.TabIndex = 25;
             this.btn_Browse.Text = "Browse";
             this.btn_Browse.UseVisualStyleBackColor = true;
+            this.btn_Browse.Click += new System.EventHandler(this.btn_Browse_Click);
             // 
             // label1
             // 
@@ -383,21 +387,19 @@ namespace ProjectPCS
             this.m_modelBindingNavigatorSaveItem.Text = "Save Data";
             this.m_modelBindingNavigatorSaveItem.Click += new System.EventHandler(this.m_modelBindingNavigatorSaveItem_Click_1);
             // 
-            // mODEL_IDTextBox
+            // tb_modelid
             // 
-            this.mODEL_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_modelBindingSource, "MODEL_ID", true));
-            this.mODEL_IDTextBox.Location = new System.Drawing.Point(590, 175);
-            this.mODEL_IDTextBox.Name = "mODEL_IDTextBox";
-            this.mODEL_IDTextBox.Size = new System.Drawing.Size(139, 26);
-            this.mODEL_IDTextBox.TabIndex = 37;
+            this.tb_modelid.Location = new System.Drawing.Point(590, 174);
+            this.tb_modelid.Name = "tb_modelid";
+            this.tb_modelid.Size = new System.Drawing.Size(139, 26);
+            this.tb_modelid.TabIndex = 39;
             // 
-            // dESCRIPTIONTextBox
+            // tb_desc
             // 
-            this.dESCRIPTIONTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.m_modelBindingSource, "DESCRIPTION", true));
-            this.dESCRIPTIONTextBox.Location = new System.Drawing.Point(590, 212);
-            this.dESCRIPTIONTextBox.Name = "dESCRIPTIONTextBox";
-            this.dESCRIPTIONTextBox.Size = new System.Drawing.Size(332, 26);
-            this.dESCRIPTIONTextBox.TabIndex = 38;
+            this.tb_desc.Location = new System.Drawing.Point(590, 211);
+            this.tb_desc.Name = "tb_desc";
+            this.tb_desc.Size = new System.Drawing.Size(334, 26);
+            this.tb_desc.TabIndex = 40;
             // 
             // masterModel
             // 
@@ -405,10 +407,10 @@ namespace ProjectPCS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1370, 397);
+            this.Controls.Add(this.tb_desc);
+            this.Controls.Add(this.tb_modelid);
             this.Controls.Add(dESCRIPTIONLabel);
-            this.Controls.Add(this.dESCRIPTIONTextBox);
             this.Controls.Add(mODEL_IDLabel);
-            this.Controls.Add(this.mODEL_IDTextBox);
             this.Controls.Add(this.m_modelBindingNavigator);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_Delete);
@@ -437,17 +439,6 @@ namespace ProjectPCS
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_Exit;
-        private System.Windows.Forms.Button btn_Delete;
-        private System.Windows.Forms.Button btn_Edit;
-        private System.Windows.Forms.Button btn_Add;
-        private System.Windows.Forms.Button btn_Print;
-        private System.Windows.Forms.Button btn_Find;
-        private System.Windows.Forms.Button btn_Bottom;
-        private System.Windows.Forms.Button btn_Next;
-        private System.Windows.Forms.Button btn_Prev;
-        private System.Windows.Forms.Button btn_Top;
         private System.Windows.Forms.Button btn_Browse;
         private System.Windows.Forms.Label label1;
         private UASDataSet uASDataSet;
@@ -467,7 +458,17 @@ namespace ProjectPCS
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton m_modelBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox mODEL_IDTextBox;
-        private System.Windows.Forms.TextBox dESCRIPTIONTextBox;
+        public System.Windows.Forms.TextBox tb_modelid;
+        public System.Windows.Forms.TextBox tb_desc;
+        public System.Windows.Forms.Button btn_Exit;
+        public System.Windows.Forms.Button btn_Delete;
+        public System.Windows.Forms.Button btn_Edit;
+        public System.Windows.Forms.Button btn_Add;
+        public System.Windows.Forms.Button btn_Print;
+        public System.Windows.Forms.Button btn_Find;
+        public System.Windows.Forms.Button btn_Bottom;
+        public System.Windows.Forms.Button btn_Next;
+        public System.Windows.Forms.Button btn_Prev;
+        public System.Windows.Forms.Button btn_Top;
     }
 }

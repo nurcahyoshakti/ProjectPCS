@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionDB.cs" />
+    <Compile Include="viewMasterModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewMasterModel.Designer.cs">
+      <DependentUpon>viewMasterModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewMasterPelanggan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <Compile Include="viewMasterSupplier.Designer.cs">
       <DependentUpon>viewMasterSupplier.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="viewMasterModel.resx">
+      <DependentUpon>viewMasterModel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="viewMasterPelanggan.resx">
       <DependentUpon>viewMasterPelanggan.cs</DependentUpon>
     </EmbeddedResource>

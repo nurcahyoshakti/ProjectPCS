@@ -56,15 +56,18 @@ namespace ProjectPCS
             this.panel1.Controls.Add(this.btn_addData);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(989, 34);
+            this.panel1.Size = new System.Drawing.Size(1484, 52);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btn_addData
             // 
-            this.btn_addData.Location = new System.Drawing.Point(3, 3);
+            this.btn_addData.Location = new System.Drawing.Point(4, 5);
+            this.btn_addData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_addData.Name = "btn_addData";
-            this.btn_addData.Size = new System.Drawing.Size(128, 23);
+            this.btn_addData.Size = new System.Drawing.Size(192, 35);
             this.btn_addData.TabIndex = 0;
             this.btn_addData.Text = "Add Data";
             this.btn_addData.UseVisualStyleBackColor = true;
@@ -90,13 +93,14 @@ namespace ProjectPCS
             this.Column10,
             this.column_edited,
             this.column_deleted});
-            this.dgv_masterSupplier.Location = new System.Drawing.Point(3, 40);
+            this.dgv_masterSupplier.Location = new System.Drawing.Point(4, 62);
+            this.dgv_masterSupplier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgv_masterSupplier.Name = "dgv_masterSupplier";
             this.dgv_masterSupplier.ReadOnly = true;
             this.dgv_masterSupplier.RowHeadersVisible = false;
             this.dgv_masterSupplier.RowHeadersWidth = 62;
             this.dgv_masterSupplier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_masterSupplier.Size = new System.Drawing.Size(986, 414);
+            this.dgv_masterSupplier.Size = new System.Drawing.Size(1479, 637);
             this.dgv_masterSupplier.TabIndex = 7;
             this.dgv_masterSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_masterSupplier_CellContentClick);
             // 
@@ -107,28 +111,31 @@ namespace ProjectPCS
             this.Column14.MinimumWidth = 8;
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
-            this.Column14.Width = 39;
+            this.Column14.Width = 54;
             // 
             // Column11
             // 
             this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column11.HeaderText = "KODE";
+            this.Column11.MinimumWidth = 8;
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
-            this.Column11.Width = 62;
+            this.Column11.Width = 90;
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "NAMA";
+            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 63;
+            this.Column1.Width = 91;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column2.HeaderText = "ALAMAT";
+            this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -136,38 +143,43 @@ namespace ProjectPCS
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column3.HeaderText = "KOTA";
+            this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 61;
+            this.Column3.Width = 87;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column4.HeaderText = "TELP/HP";
+            this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 79;
+            this.Column4.Width = 110;
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column5.HeaderText = "NPWP";
+            this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 65;
+            this.Column5.Width = 91;
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column6.HeaderText = "NAMA NPWP";
+            this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
-            this.Column6.Width = 99;
+            this.Column6.Width = 141;
             // 
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column7.HeaderText = "ALAMAT NPWP";
+            this.Column7.MinimumWidth = 8;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
@@ -175,22 +187,25 @@ namespace ProjectPCS
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column8.HeaderText = "EMAIL";
+            this.Column8.MinimumWidth = 8;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Width = 64;
+            this.Column8.Width = 94;
             // 
             // Column9
             // 
             this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column9.HeaderText = "BANK";
+            this.Column9.MinimumWidth = 8;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            this.Column9.Width = 61;
+            this.Column9.Width = 88;
             // 
             // Column10
             // 
             this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column10.HeaderText = "NOTE";
+            this.Column10.MinimumWidth = 8;
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
             // 
@@ -216,12 +231,13 @@ namespace ProjectPCS
             // 
             // viewMasterSupplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(989, 450);
+            this.ClientSize = new System.Drawing.Size(1484, 692);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgv_masterSupplier);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "viewMasterSupplier";
             this.Text = "Tabel Supplier";
             this.Load += new System.EventHandler(this.viewMasterSupplier_Load);

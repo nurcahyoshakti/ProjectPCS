@@ -123,21 +123,23 @@ namespace ProjectPCS
             this.Column13,
             this.column_edited,
             this.column_deleted});
-            this.dgv_masterPelanggan.Location = new System.Drawing.Point(3, 40);
+            this.dgv_masterPelanggan.Location = new System.Drawing.Point(4, 62);
+            this.dgv_masterPelanggan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgv_masterPelanggan.Name = "dgv_masterPelanggan";
             this.dgv_masterPelanggan.ReadOnly = true;
             this.dgv_masterPelanggan.RowHeadersVisible = false;
             this.dgv_masterPelanggan.RowHeadersWidth = 62;
             this.dgv_masterPelanggan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_masterPelanggan.Size = new System.Drawing.Size(1330, 414);
+            this.dgv_masterPelanggan.Size = new System.Drawing.Size(1920, 637);
             this.dgv_masterPelanggan.TabIndex = 5;
             this.dgv_masterPelanggan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_masterPelanggan_CellContentClick);
             // 
             // btn_addData
             // 
-            this.btn_addData.Location = new System.Drawing.Point(3, 5);
+            this.btn_addData.Location = new System.Drawing.Point(4, 8);
+            this.btn_addData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_addData.Name = "btn_addData";
-            this.btn_addData.Size = new System.Drawing.Size(128, 23);
+            this.btn_addData.Size = new System.Drawing.Size(192, 35);
             this.btn_addData.TabIndex = 0;
             this.btn_addData.Text = "Add Data";
             this.btn_addData.UseVisualStyleBackColor = true;
@@ -148,8 +150,9 @@ namespace ProjectPCS
             this.panel1.Controls.Add(this.btn_addData);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1333, 34);
+            this.panel1.Size = new System.Drawing.Size(1924, 52);
             this.panel1.TabIndex = 4;
             // 
             // Column14
@@ -159,7 +162,7 @@ namespace ProjectPCS
             this.Column14.MinimumWidth = 8;
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
-            this.Column14.Width = 39;
+            this.Column14.Width = 54;
             // 
             // Column1
             // 
@@ -168,7 +171,7 @@ namespace ProjectPCS
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 62;
+            this.Column1.Width = 90;
             // 
             // Column2
             // 
@@ -177,7 +180,7 @@ namespace ProjectPCS
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 63;
+            this.Column2.Width = 91;
             // 
             // Column3
             // 
@@ -202,7 +205,7 @@ namespace ProjectPCS
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 82;
+            this.Column5.Width = 118;
             // 
             // Column6
             // 
@@ -235,7 +238,7 @@ namespace ProjectPCS
             this.Column9.MinimumWidth = 8;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            this.Column9.Width = 72;
+            this.Column9.Width = 104;
             // 
             // Column10
             // 
@@ -260,15 +263,16 @@ namespace ProjectPCS
             this.Column12.MinimumWidth = 8;
             this.Column12.Name = "Column12";
             this.Column12.ReadOnly = true;
-            this.Column12.Width = 47;
+            this.Column12.Width = 67;
             // 
             // Column13
             // 
-            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column13.HeaderText = "KETERANGAN";
             this.Column13.MinimumWidth = 8;
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
+            this.Column13.Width = 155;
             // 
             // column_edited
             // 
@@ -292,13 +296,12 @@ namespace ProjectPCS
             // 
             // viewMasterPelanggan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1333, 477);
+            this.ClientSize = new System.Drawing.Size(1924, 839);
             this.Controls.Add(this.dgv_masterPelanggan);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "viewMasterPelanggan";
             this.Text = "Tabel Pelanggan";
             this.Load += new System.EventHandler(this.viewMasterPelanggan_Load);
