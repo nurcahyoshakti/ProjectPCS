@@ -112,7 +112,7 @@ namespace ProjectPCS
             // bANKLabel
             // 
             bANKLabel.AutoSize = true;
-            bANKLabel.Location = new System.Drawing.Point(424, 115);
+            bANKLabel.Location = new System.Drawing.Point(449, 115);
             bANKLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             bANKLabel.Name = "bANKLabel";
             bANKLabel.Size = new System.Drawing.Size(39, 13);
@@ -122,7 +122,7 @@ namespace ProjectPCS
             // tELP_HPLabel
             // 
             tELP_HPLabel.AutoSize = true;
-            tELP_HPLabel.Location = new System.Drawing.Point(712, 138);
+            tELP_HPLabel.Location = new System.Drawing.Point(746, 134);
             tELP_HPLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             tELP_HPLabel.Name = "tELP_HPLabel";
             tELP_HPLabel.Size = new System.Drawing.Size(25, 13);
@@ -153,7 +153,7 @@ namespace ProjectPCS
             // kOTALabel
             // 
             kOTALabel.AutoSize = true;
-            kOTALabel.Location = new System.Drawing.Point(698, 162);
+            kOTALabel.Location = new System.Drawing.Point(732, 162);
             kOTALabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             kOTALabel.Name = "kOTALabel";
             kOTALabel.Size = new System.Drawing.Size(39, 13);
@@ -163,7 +163,7 @@ namespace ProjectPCS
             // nAMA_NPWPLabel
             // 
             nAMA_NPWPLabel.AutoSize = true;
-            nAMA_NPWPLabel.Location = new System.Drawing.Point(24, 227);
+            nAMA_NPWPLabel.Location = new System.Drawing.Point(24, 223);
             nAMA_NPWPLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nAMA_NPWPLabel.Name = "nAMA_NPWPLabel";
             nAMA_NPWPLabel.Size = new System.Drawing.Size(74, 13);
@@ -183,7 +183,7 @@ namespace ProjectPCS
             // nPWPLabel
             // 
             nPWPLabel.AutoSize = true;
-            nPWPLabel.Location = new System.Drawing.Point(424, 227);
+            nPWPLabel.Location = new System.Drawing.Point(557, 223);
             nPWPLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nPWPLabel.Name = "nPWPLabel";
             nPWPLabel.Size = new System.Drawing.Size(62, 13);
@@ -193,7 +193,7 @@ namespace ProjectPCS
             // eMAILLabel
             // 
             eMAILLabel.AutoSize = true;
-            eMAILLabel.Location = new System.Drawing.Point(56, 275);
+            eMAILLabel.Location = new System.Drawing.Point(56, 310);
             eMAILLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             eMAILLabel.Name = "eMAILLabel";
             eMAILLabel.Size = new System.Drawing.Size(42, 13);
@@ -203,12 +203,13 @@ namespace ProjectPCS
             // nOTELabel
             // 
             nOTELabel.AutoSize = true;
-            nOTELabel.Location = new System.Drawing.Point(58, 321);
+            nOTELabel.Location = new System.Drawing.Point(58, 339);
             nOTELabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nOTELabel.Name = "nOTELabel";
             nOTELabel.Size = new System.Drawing.Size(40, 13);
             nOTELabel.TabIndex = 34;
             nOTELabel.Text = "NOTE:";
+            nOTELabel.Click += new System.EventHandler(this.nOTELabel_Click);
             // 
             // btn_Exit
             // 
@@ -275,6 +276,7 @@ namespace ProjectPCS
             this.btn_Bottom.TabIndex = 17;
             this.btn_Bottom.Text = "Bottom";
             this.btn_Bottom.UseVisualStyleBackColor = true;
+            this.btn_Bottom.Click += new System.EventHandler(this.btn_Bottom_Click);
             // 
             // btn_Next
             // 
@@ -304,6 +306,7 @@ namespace ProjectPCS
             this.btn_Top.TabIndex = 14;
             this.btn_Top.Text = "Top";
             this.btn_Top.UseVisualStyleBackColor = true;
+            this.btn_Top.Click += new System.EventHandler(this.btn_Top_Click);
             // 
             // btn_Browse
             // 
@@ -313,6 +316,7 @@ namespace ProjectPCS
             this.btn_Browse.TabIndex = 13;
             this.btn_Browse.Text = "Browse";
             this.btn_Browse.UseVisualStyleBackColor = true;
+            this.btn_Browse.Click += new System.EventHandler(this.btn_Browse_Click);
             // 
             // label1
             // 
@@ -508,28 +512,28 @@ namespace ProjectPCS
             // 
             // tb_alamat
             // 
-            this.tb_alamat.Location = new System.Drawing.Point(314, 159);
+            this.tb_alamat.Location = new System.Drawing.Point(324, 159);
             this.tb_alamat.Name = "tb_alamat";
             this.tb_alamat.Size = new System.Drawing.Size(379, 20);
             this.tb_alamat.TabIndex = 38;
             // 
             // tb_bank
             // 
-            this.tb_bank.Location = new System.Drawing.Point(209, 131);
+            this.tb_bank.Location = new System.Drawing.Point(232, 131);
             this.tb_bank.Name = "tb_bank";
             this.tb_bank.Size = new System.Drawing.Size(484, 20);
             this.tb_bank.TabIndex = 39;
             // 
             // tb_hp
             // 
-            this.tb_hp.Location = new System.Drawing.Point(742, 131);
+            this.tb_hp.Location = new System.Drawing.Point(776, 131);
             this.tb_hp.Name = "tb_hp";
             this.tb_hp.Size = new System.Drawing.Size(100, 20);
             this.tb_hp.TabIndex = 40;
             // 
             // tb_kota
             // 
-            this.tb_kota.Location = new System.Drawing.Point(742, 157);
+            this.tb_kota.Location = new System.Drawing.Point(776, 157);
             this.tb_kota.Name = "tb_kota";
             this.tb_kota.Size = new System.Drawing.Size(100, 20);
             this.tb_kota.TabIndex = 41;
@@ -543,28 +547,28 @@ namespace ProjectPCS
             // 
             // tb_alamatnpwp
             // 
-            this.tb_alamatnpwp.Location = new System.Drawing.Point(103, 246);
+            this.tb_alamatnpwp.Location = new System.Drawing.Point(103, 248);
             this.tb_alamatnpwp.Name = "tb_alamatnpwp";
             this.tb_alamatnpwp.Size = new System.Drawing.Size(316, 20);
             this.tb_alamatnpwp.TabIndex = 43;
             // 
             // tb_nonpwp
             // 
-            this.tb_nonpwp.Location = new System.Drawing.Point(491, 220);
+            this.tb_nonpwp.Location = new System.Drawing.Point(624, 220);
             this.tb_nonpwp.Name = "tb_nonpwp";
-            this.tb_nonpwp.Size = new System.Drawing.Size(202, 20);
+            this.tb_nonpwp.Size = new System.Drawing.Size(252, 20);
             this.tb_nonpwp.TabIndex = 44;
             // 
             // tb_email
             // 
-            this.tb_email.Location = new System.Drawing.Point(103, 275);
+            this.tb_email.Location = new System.Drawing.Point(103, 310);
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(316, 20);
             this.tb_email.TabIndex = 45;
             // 
             // tb_note
             // 
-            this.tb_note.Location = new System.Drawing.Point(103, 314);
+            this.tb_note.Location = new System.Drawing.Point(103, 336);
             this.tb_note.Name = "tb_note";
             this.tb_note.Size = new System.Drawing.Size(316, 20);
             this.tb_note.TabIndex = 46;

@@ -17,6 +17,9 @@ namespace ProjectPCS
         SqlCommand cmd;
         ConnectionDB db = new ConnectionDB();
         viewMasterSupplier f;
+        SqlDataAdapter da;
+
+        BindingSource bss = new BindingSource();
         public masterSupplier(viewMasterSupplier f)
         {
             InitializeComponent();
@@ -37,6 +40,23 @@ namespace ProjectPCS
             // TODO: This line of code loads data into the 'uASDataSet.m_supplier' table. You can move, or remove it, as needed.
             this.m_supplierTableAdapter.Fill(this.uASDataSet.m_supplier);
 
+            String sql = "Select * from m_supplier";
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(sql, con);
+            da.Fill(dt);
+            bss.DataSource = dt;
+
+            tb_supplier.DataBindings.Add(new Binding("Text", bss, "P_ID"));
+            tb_nama.DataBindings.Add(new Binding("Text", bss, "NAMA"));
+            tb_alamat.DataBindings.Add(new Binding("Text", bss, "ALAMAT"));
+            tb_kota.DataBindings.Add(new Binding("Text", bss, "KOTA"));
+            tb_hp.DataBindings.Add(new Binding("Text", bss, "TELP_HP"));
+            tb_nonpwp.DataBindings.Add(new Binding("Text", bss, "NPWP"));
+            tb_namanpwp.DataBindings.Add(new Binding("Text", bss, "NAMA_NPWP"));
+            tb_alamatnpwp.DataBindings.Add(new Binding("Text", bss, "ALAMAT_NPW"));
+            tb_email.DataBindings.Add(new Binding("Text", bss, "EMAIL"));
+            tb_bank.DataBindings.Add(new Binding("Text", bss, "BANK"));
+            tb_note.DataBindings.Add(new Binding("Text", bss, "NOTE"));
         }
 
         private void nAMALabel_Click(object sender, EventArgs e)
@@ -46,12 +66,12 @@ namespace ProjectPCS
 
         private void btn_Prev_Click(object sender, EventArgs e)
         {
-            
+            bss.MovePrevious();
         }
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            
+            bss.MoveNext();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -154,6 +174,28 @@ namespace ProjectPCS
                 con.Close();
                 MessageBox.Show(ex.Message, "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void nOTELabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Browse_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            viewMasterSupplier f = new viewMasterSupplier();
+            f.ShowDialog();
+        }
+
+        private void btn_Top_Click(object sender, EventArgs e)
+        {
+            bss.MoveFirst();
+        }
+
+        private void btn_Bottom_Click(object sender, EventArgs e)
+        {
+            bss.MoveLast();
         }
     }
 }

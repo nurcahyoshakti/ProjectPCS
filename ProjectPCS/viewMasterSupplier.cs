@@ -46,6 +46,7 @@ namespace ProjectPCS
 
         private void btn_addData_Click(object sender, EventArgs e)
         {
+            this.Hide();
             masterSupplier f = new masterSupplier(this);
             f.btn_Add.Enabled = true;
             f.btn_Edit.Enabled = false;

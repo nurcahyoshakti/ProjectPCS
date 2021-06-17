@@ -57,7 +57,7 @@ namespace ProjectPCS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(863, 34);
+            this.panel1.Size = new System.Drawing.Size(989, 34);
             this.panel1.TabIndex = 6;
             // 
             // btn_addData
@@ -96,7 +96,7 @@ namespace ProjectPCS
             this.dgv_masterSupplier.RowHeadersVisible = false;
             this.dgv_masterSupplier.RowHeadersWidth = 62;
             this.dgv_masterSupplier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_masterSupplier.Size = new System.Drawing.Size(854, 414);
+            this.dgv_masterSupplier.Size = new System.Drawing.Size(986, 414);
             this.dgv_masterSupplier.TabIndex = 7;
             this.dgv_masterSupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_masterSupplier_CellContentClick);
             // 
@@ -111,9 +111,11 @@ namespace ProjectPCS
             // 
             // Column11
             // 
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column11.HeaderText = "KODE";
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
+            this.Column11.Width = 62;
             // 
             // Column1
             // 
@@ -187,11 +189,10 @@ namespace ProjectPCS
             // 
             // Column10
             // 
-            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column10.HeaderText = "NOTE";
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
-            this.Column10.Width = 62;
             // 
             // column_edited
             // 
@@ -217,11 +218,12 @@ namespace ProjectPCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 450);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(989, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgv_masterSupplier);
             this.Name = "viewMasterSupplier";
-            this.Text = "viewMasterSupplier";
+            this.Text = "Tabel Supplier";
             this.Load += new System.EventHandler(this.viewMasterSupplier_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_masterSupplier)).EndInit();
