@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Data_Layer;
 
 namespace ProjectPCS
 {
@@ -17,9 +18,11 @@ namespace ProjectPCS
         SqlCommand cmd;
         SqlDataReader dr;
         ConnectionDB db = new ConnectionDB();
+
         public viewMasterSupplier()
         {
             InitializeComponent();
+
             con = new SqlConnection(db.GetConnection());
             LoadRecords();
         }
@@ -38,10 +41,6 @@ namespace ProjectPCS
             }
             dr.Close();
             con.Close();
-        }
-        private void viewMasterSupplier_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_addData_Click(object sender, EventArgs e)
@@ -88,11 +87,6 @@ namespace ProjectPCS
                     LoadRecords();
                 }
             }
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

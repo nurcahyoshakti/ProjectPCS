@@ -17,11 +17,6 @@ namespace ProjectPCS
             InitializeComponent();
         }
 
-        private void mainHome_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_mBarang_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -36,48 +31,10 @@ namespace ProjectPCS
             f.Show();
         }
 
-        private void btn_mModel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            viewMasterModel f = new viewMasterModel();
-            f.Show();
-        }
-
         private void btn_mSupplier_Click(object sender, EventArgs e)
         {
             this.Hide();
             viewMasterSupplier f = new viewMasterSupplier();
-            f.Show();
-        }
-
-        private void btn_mMerk_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            masterMerk f = new masterMerk();
-            f.Show();
-        }
-
-        private void btn_mKota_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btn_mGroupuser_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            masterGroupUser f = new masterGroupUser();
-            f.Show();
-        }
-
-        private void btn_mHakaksesgroupuser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_mUsers_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            masterUsers f = new masterUsers();
             f.Show();
         }
     }

@@ -29,15 +29,8 @@ namespace ProjectPCS
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(viewMasterPelanggan));
-            this.uASDataSet = new ProjectPCS.UASDataSet();
-            this.m_pelangganBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.m_pelangganTableAdapter = new ProjectPCS.UASDataSetTableAdapters.m_pelangganTableAdapter();
-            this.tableAdapterManager = new ProjectPCS.UASDataSetTableAdapters.TableAdapterManager();
             this.dgv_masterPelanggan = new System.Windows.Forms.DataGridView();
-            this.btn_addData = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,52 +47,11 @@ namespace ProjectPCS
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_edited = new System.Windows.Forms.DataGridViewImageColumn();
             this.column_deleted = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.uASDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_pelangganBindingSource)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_addData = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_masterPelanggan)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // uASDataSet
-            // 
-            this.uASDataSet.DataSetName = "UASDataSet";
-            this.uASDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // m_pelangganBindingSource
-            // 
-            this.m_pelangganBindingSource.DataMember = "m_pelanggan";
-            this.m_pelangganBindingSource.DataSource = this.uASDataSet;
-            // 
-            // m_pelangganTableAdapter
-            // 
-            this.m_pelangganTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.m_barangTableAdapter = null;
-            this.tableAdapterManager.m_groupuserTableAdapter = null;
-            this.tableAdapterManager.m_hakaksesgroupuserTableAdapter = null;
-            this.tableAdapterManager.m_kotaTableAdapter = null;
-            this.tableAdapterManager.m_merkTableAdapter = null;
-            this.tableAdapterManager.m_modelTableAdapter = null;
-            this.tableAdapterManager.m_pelangganTableAdapter = this.m_pelangganTableAdapter;
-            this.tableAdapterManager.m_supplierTableAdapter = null;
-            this.tableAdapterManager.m_usersTableAdapter = null;
-            this.tableAdapterManager.rework_detailTableAdapter = null;
-            this.tableAdapterManager.reworkTableAdapter = null;
-            this.tableAdapterManager.stock_historyTableAdapter = null;
-            this.tableAdapterManager.stockTableAdapter = null;
-            this.tableAdapterManager.t_invoice_detailTableAdapter = null;
-            this.tableAdapterManager.t_invoice_headerTableAdapter = null;
-            this.tableAdapterManager.t_invoiceppn_detailTableAdapter = null;
-            this.tableAdapterManager.t_invoiceppn_headerTableAdapter = null;
-            this.tableAdapterManager.t_label_hargaTableAdapter = null;
-            this.tableAdapterManager.t_pembelian_detailTableAdapter = null;
-            this.tableAdapterManager.t_pembelian_headerTableAdapter = null;
-            this.tableAdapterManager.t_penawaran_detailTableAdapter = null;
-            this.tableAdapterManager.t_penawaran_headerTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ProjectPCS.UASDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // dgv_masterPelanggan
             // 
@@ -123,37 +75,15 @@ namespace ProjectPCS
             this.Column13,
             this.column_edited,
             this.column_deleted});
-            this.dgv_masterPelanggan.Location = new System.Drawing.Point(4, 62);
-            this.dgv_masterPelanggan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgv_masterPelanggan.Location = new System.Drawing.Point(0, 34);
             this.dgv_masterPelanggan.Name = "dgv_masterPelanggan";
             this.dgv_masterPelanggan.ReadOnly = true;
             this.dgv_masterPelanggan.RowHeadersVisible = false;
             this.dgv_masterPelanggan.RowHeadersWidth = 62;
             this.dgv_masterPelanggan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_masterPelanggan.Size = new System.Drawing.Size(1920, 637);
-            this.dgv_masterPelanggan.TabIndex = 5;
+            this.dgv_masterPelanggan.Size = new System.Drawing.Size(1330, 414);
+            this.dgv_masterPelanggan.TabIndex = 9;
             this.dgv_masterPelanggan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_masterPelanggan_CellContentClick);
-            // 
-            // btn_addData
-            // 
-            this.btn_addData.Location = new System.Drawing.Point(4, 8);
-            this.btn_addData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_addData.Name = "btn_addData";
-            this.btn_addData.Size = new System.Drawing.Size(192, 35);
-            this.btn_addData.TabIndex = 0;
-            this.btn_addData.Text = "Add Data";
-            this.btn_addData.UseVisualStyleBackColor = true;
-            this.btn_addData.Click += new System.EventHandler(this.btn_addData_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_addData);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 52);
-            this.panel1.TabIndex = 4;
             // 
             // Column14
             // 
@@ -162,7 +92,7 @@ namespace ProjectPCS
             this.Column14.MinimumWidth = 8;
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
-            this.Column14.Width = 54;
+            this.Column14.Width = 39;
             // 
             // Column1
             // 
@@ -171,7 +101,7 @@ namespace ProjectPCS
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 90;
+            this.Column1.Width = 62;
             // 
             // Column2
             // 
@@ -180,7 +110,7 @@ namespace ProjectPCS
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 91;
+            this.Column2.Width = 63;
             // 
             // Column3
             // 
@@ -205,7 +135,7 @@ namespace ProjectPCS
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 118;
+            this.Column5.Width = 82;
             // 
             // Column6
             // 
@@ -238,7 +168,7 @@ namespace ProjectPCS
             this.Column9.MinimumWidth = 8;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            this.Column9.Width = 104;
+            this.Column9.Width = 67;
             // 
             // Column10
             // 
@@ -263,16 +193,15 @@ namespace ProjectPCS
             this.Column12.MinimumWidth = 8;
             this.Column12.Name = "Column12";
             this.Column12.ReadOnly = true;
-            this.Column12.Width = 67;
+            this.Column12.Width = 47;
             // 
             // Column13
             // 
-            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column13.HeaderText = "KETERANGAN";
             this.Column13.MinimumWidth = 8;
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
-            this.Column13.Width = 155;
             // 
             // column_edited
             // 
@@ -294,19 +223,35 @@ namespace ProjectPCS
             this.column_deleted.ReadOnly = true;
             this.column_deleted.Width = 8;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_addData);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1332, 34);
+            this.panel1.TabIndex = 8;
+            // 
+            // btn_addData
+            // 
+            this.btn_addData.Location = new System.Drawing.Point(3, 5);
+            this.btn_addData.Name = "btn_addData";
+            this.btn_addData.Size = new System.Drawing.Size(128, 23);
+            this.btn_addData.TabIndex = 0;
+            this.btn_addData.Text = "Add Data";
+            this.btn_addData.UseVisualStyleBackColor = true;
+            this.btn_addData.Click += new System.EventHandler(this.btn_addData_Click);
+            // 
             // viewMasterPelanggan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1924, 839);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1332, 450);
             this.Controls.Add(this.dgv_masterPelanggan);
             this.Controls.Add(this.panel1);
             this.Name = "viewMasterPelanggan";
-            this.Text = "Tabel Pelanggan";
-            this.Load += new System.EventHandler(this.viewMasterPelanggan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.uASDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_pelangganBindingSource)).EndInit();
+            this.Text = "viewMasterPelanggan";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_masterPelanggan)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -314,13 +259,8 @@ namespace ProjectPCS
         }
 
         #endregion
-        private UASDataSet uASDataSet;
-        private System.Windows.Forms.BindingSource m_pelangganBindingSource;
-        private UASDataSetTableAdapters.m_pelangganTableAdapter m_pelangganTableAdapter;
-        private UASDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+
         private System.Windows.Forms.DataGridView dgv_masterPelanggan;
-        private System.Windows.Forms.Button btn_addData;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -337,5 +277,7 @@ namespace ProjectPCS
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewImageColumn column_edited;
         private System.Windows.Forms.DataGridViewImageColumn column_deleted;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_addData;
     }
 }

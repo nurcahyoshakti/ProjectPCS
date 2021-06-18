@@ -30,6 +30,8 @@ namespace ProjectPCS
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(viewMasterBarang));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_addData = new System.Windows.Forms.Button();
             this.dgv_masterBarang = new System.Windows.Forms.DataGridView();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,11 +49,28 @@ namespace ProjectPCS
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_edited = new System.Windows.Forms.DataGridViewImageColumn();
             this.column_deleted = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_addData = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_masterBarang)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_masterBarang)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_addData);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1129, 34);
+            this.panel1.TabIndex = 6;
+            // 
+            // btn_addData
+            // 
+            this.btn_addData.Location = new System.Drawing.Point(3, 3);
+            this.btn_addData.Name = "btn_addData";
+            this.btn_addData.Size = new System.Drawing.Size(128, 23);
+            this.btn_addData.TabIndex = 0;
+            this.btn_addData.Text = "Add Data";
+            this.btn_addData.UseVisualStyleBackColor = true;
+            this.btn_addData.Click += new System.EventHandler(this.btn_addData_Click);
             // 
             // dgv_masterBarang
             // 
@@ -82,7 +101,7 @@ namespace ProjectPCS
             this.dgv_masterBarang.RowHeadersWidth = 62;
             this.dgv_masterBarang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_masterBarang.Size = new System.Drawing.Size(1128, 414);
-            this.dgv_masterBarang.TabIndex = 3;
+            this.dgv_masterBarang.TabIndex = 7;
             this.dgv_masterBarang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_masterBarang_CellContentClick);
             // 
             // Column14
@@ -230,48 +249,28 @@ namespace ProjectPCS
             this.column_deleted.ReadOnly = true;
             this.column_deleted.Width = 8;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_addData);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1128, 34);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btn_addData
-            // 
-            this.btn_addData.Location = new System.Drawing.Point(3, 3);
-            this.btn_addData.Name = "btn_addData";
-            this.btn_addData.Size = new System.Drawing.Size(128, 23);
-            this.btn_addData.TabIndex = 0;
-            this.btn_addData.Text = "Add Data";
-            this.btn_addData.UseVisualStyleBackColor = true;
-            this.btn_addData.Click += new System.EventHandler(this.btn_addData_Click);
-            // 
             // viewMasterBarang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1128, 450);
-            this.Controls.Add(this.dgv_masterBarang);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1129, 450);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgv_masterBarang);
             this.Name = "viewMasterBarang";
-            this.Text = "Tabel Barang";
+            this.Text = "viewMasterBarang";
             this.Load += new System.EventHandler(this.viewMasterBarang_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_masterBarang)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_masterBarang)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgv_masterBarang;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_addData;
+        private System.Windows.Forms.DataGridView dgv_masterBarang;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

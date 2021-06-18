@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Data_Layer;
 
 namespace ProjectPCS
 {
     public partial class viewMasterPelanggan : Form
     {
-
         SqlConnection con;
         SqlCommand cmd;
         SqlDataReader dr;
@@ -25,14 +25,6 @@ namespace ProjectPCS
 
             con = new SqlConnection(db.GetConnection());
             LoadRecords();
-        }
-
-        private void m_pelangganBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.m_pelangganBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.uASDataSet);
-
         }
 
         public void LoadRecords()
@@ -49,13 +41,6 @@ namespace ProjectPCS
             }
             dr.Close();
             con.Close();
-        }
-
-        private void viewMasterPelanggan_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'uASDataSet.m_pelanggan' table. You can move, or remove it, as needed.
-            this.m_pelangganTableAdapter.Fill(this.uASDataSet.m_pelanggan);
-
         }
 
         private void btn_addData_Click(object sender, EventArgs e)
