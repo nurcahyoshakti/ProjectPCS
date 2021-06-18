@@ -37,5 +37,12 @@ namespace ProjectPCS
             viewMasterSupplier f = new viewMasterSupplier();
             f.Show();
         }
+
+        private void btn_mModel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            masterModel f = new masterModel();
+            f.Show();
+        }
     }
 }

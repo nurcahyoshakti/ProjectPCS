@@ -58,6 +58,12 @@
     <Compile Include="masterBarang.Designer.cs">
       <DependentUpon>masterBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="masterModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterModel.Designer.cs">
+      <DependentUpon>masterModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="masterPelanggan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UASDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="viewMasterBarang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="masterBarang.resx">
       <DependentUpon>masterBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterModel.resx">
+      <DependentUpon>masterModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="masterPelanggan.resx">
       <DependentUpon>masterPelanggan.cs</DependentUpon>
@@ -129,6 +143,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UASDataSet1.xsc">
+      <DependentUpon>UASDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet1.xss">
+      <DependentUpon>UASDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

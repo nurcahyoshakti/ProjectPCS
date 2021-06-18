@@ -128,6 +128,7 @@ namespace ProjectPCS
             this.btn_mModel.TabIndex = 22;
             this.btn_mModel.Text = "Master Model";
             this.btn_mModel.UseVisualStyleBackColor = true;
+            this.btn_mModel.Click += new System.EventHandler(this.btn_mModel_Click);
             // 
             // btn_mBarang
             // 
